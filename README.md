@@ -30,48 +30,48 @@
 
 ### Zestaw 01 - proste instrukcje wybierania danych
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-01/Zestaw-01.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2001/Zestaw%2001.md)
 
 ### Zestaw 02 - funkcje oracle
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-02/Zestaw-02.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2002/Zestaw%2002.md)
 
 ### Zestaw 03
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-03/Zestaw-03.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2003/Zestaw%2003.md)
 
 ### Zestaw 04
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-04/Zestaw-04.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2004/Zestaw%2004.md)
 
 ### Zestaw 05
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-05/Zestaw-05.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2005/Zestaw%2005.md)
 
 ### Zestaw 06
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-06/Zestaw-06.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2006/Zestaw%2006.md)
 
 ### Zestaw 07
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-07/Zestaw-07.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2007/Zestaw%2007.md)
 
 ### Zestaw 08
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-08/Zestaw-08.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2008/Zestaw%2008.md)
 
 ### Zestaw 09
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-09/Zestaw-09.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2009/Zestaw%2009.md)
 
 ### Zestaw 10
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-10/Zestaw-10.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010/Zestaw%2010.md)
 
 ### Zestaw 11
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-11/Zestaw-11.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011/Zestaw%2011.md)
 
 ### Zestaw 12
 
-### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw-12/Zestaw-12.md)
+### [Rozwiązania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2012/Zestaw%2012.md)
