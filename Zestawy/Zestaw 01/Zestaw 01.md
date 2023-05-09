@@ -1,0 +1,181 @@
+# Bazy Danych i Zarządzanie Informacją
+
+## Zestawy
+
+### Zestaw 01 - proste instrukcje wybierania danych
+
+### Zadanie 1
+
+Napisz skrypt który z tabeli ```dept``` wyświetli ```wszystkie kolumny``` oraz ```wszystkie rekordy```.
+
+```
+SELECT * FROM dept
+```
+
+### Zadanie 2
+
+Napisz skrypt który wyświetli wszystkie ```identyfikatory departamentów```, ```nazwiska pracowników``` oraz ```identyfikatory managerów``` z tabeli ```emp```.
+
+```
+SELECT dept_id, last_name, manager_id FROM emp
+```
+
+### Zadanie 3
+
+Napisz skrypt który wyświetli ```roczne dochody``` wszystkich pracowników wraz z ich ```nazwiskami```.
+
+```
+SELECT salary * 12, last_name FROM emp
+```
+
+### Zadanie 4
+
+Napisz skrypt który wyświetli ```dane osobowe pracowników```, ```zarobki miesięczne```, ```zarobki roczne``` – doliczając premię roczną w
+wysokości 1000.
+
+```
+SELECT first_name "Imie", last_name "Nazwisko", salary "Zarobki miesieczne", (salary * 12) + 1000 "Zarobki roczne z premia" FROM emp
+```
+
+### Zadanie 5
+
+Napisz skrypt który wyświetli ```dane osobowe pracowników```, ```zarobki miesięczne```, ```zarobki roczne``` – doliczając premię co miesiąc w wysokości 8%.
+
+```
+SELECT first_name "Imie", last_name "Nazwisko", (salary * 1.08) "Zarobki miesieczne", (salary * 1.08) * 12 "Zarobki roczne" FROM emp
+```
+
+### Zadanie 6
+
+Napisz skrypt który wyświetli ```nazwisko``` oraz ```roczny dochód``` wraz z dodatkiem 5% ```miesięcznych zarobków``` – taką kolumnę nazwij ```ROCZNY DOCHÓD``` (alias).
+
+```
+SELECT last_name, (salary * 12) + (salary * 0.05) "ROCZNY DOCHOD" FROM emp
+```
+
+### Zadanie 7
+
+Napisz skrypt który wyświetli skonkatenowane ```imię i nazwisko``` (rozdzielone spacjami) poszczególnych pracowników (w jednej kolumnie). Kolumnę nazwij ```Imię i nazwisko```.
+
+```
+SELECT ((first_name || ' '||last_name)) "Imie i nazwisko" FROM emp
+```
+
+### Zadanie 8
+
+Napisz skrypt który wyświetli ```dane osobowe pracowników``` oraz ich ```stanowiska``` (w jednej kolumnie, z nagłówkiem ```Super Pracownicy```).
+
+```
+SELECT ((first_name || ' '||last_name || ' - ' || title)) "Super Pracownicy" FROM emp
+```
+
+### Zadanie 9
+
+Napisz skrypt który wyświetli ```nazwiska pracowników```, ```pensję```, ```stanowiska i ich premię``` (prowizję), obliczoną z pensji na podstawie pola ```commission_pct``` (podana jest w procentach), czyli ( $pensja * prowizja%$ ).
+
+```
+SELECT last_name, salary, title, (salary * commission_pct / 100) "Prowizja" FROM emp
+```
+
+### Zadanie 10
+
+Napisz skrypt który zmodyfikuję poprzednie zapytanie tak, aby zamiast (```null```) pojawiło się ```0```. Wykorzystaj funkcję ```NVL```.
+
+```
+SELECT last_name, salary, title, NVL(salary * commission_pct / 100, 0) 
+```
+
+### Zadanie 11
+
+Napisz skrypt który Wyświetli ```nazwy działów``` z tabeli ```dept```. Zmodyfikuj zapytanie w ten sposób, by nie pojawiały się wielokrotnie te same nazwy.
+
+```
+SELECT DISTINCT name FROM dept
+```
+
+### Zadanie 12
+
+Napisz skrypt który dla każdego pracownika wyświetli ```nazwisko```, ```numer departamentu```,
+```wynagrodzenie``` oraz ```datę zatrudnienia```. Posortuj wynik względem ```numeru departamentu``` oraz ```malejąco względem wynagrodzenia```.
+
+```
+SELECT last_name, dept_id, start_date FROM emp ORDER BY dept_id, salary DESC
+```
+
+### Zadanie 13
+
+Napisz skrypt który wyświetli ```nazwiska pracowników```, ```numery działów``` oraz ```daty zatrudnienia```. Uporządkuj wyniki ```rosnąco względem daty zatrudnienia```.
+
+```
+SELECT last_name, dept_id, start_date FROM emp ORDER BY start_date ASC
+```
+
+### Zadanie 14
+
+Napisz skrypt który wyświetli ```dane osobowe``` oraz ```stanowisko pracowników``` o nazwisku ```Patel```.
+
+```
+SELECT first_name, last_name, title FROM emp WHERE last_name='Patel'
+```
+
+### Zadanie 15
+
+Napisz skrypt który wyświetli ```nazwisko``` oraz ```datę zatrudnienia``` tych pracowników, którzy zostali zatrudnieni pomiędzy: ```2 maja
+1991``` a ```15 czerwca 1991```.
+
+```
+SELECT last_name, start_date FROM emp WHERE start_date >= to_date('02-may-1991', 'dd-mm-yyyy') AND start_date <= ('15-june-1991', 'dd-mm-yyyy');
+```
+
+### Zadanie 16
+
+Napisz skrypt który wyświetli ```identyfikatory departamentów```, ```nazwy``` oraz ```identyfikatory``` dla ```regionów``` o ```ID``` równym ```1``` lub ```3``` (tabela ```dept```)
+
+```
+SELECT id, name, region_id FROM dept WHERE region_id = 1 OR region_id = 3;
+```
+
+### Zadanie 17
+
+Napisz skrypt który wyświetlić ```dane``` ```wszystkich pracowników```, których nazwiska zaczynają się na literę ```M```.
+
+```
+SELECT * FROM emp WHERE last_name LIKE 'M%';
+```
+
+### Zadanie 18
+
+Napisz skrypt który  Wyświetli wszystkie ```dane osobowe pracowników```, których ```nazwiska``` nie zawierają litery ```a```.
+
+```
+SELECT * FROM emp WHERE last_name NOT LIKE '%a%';
+
+```
+
+### Zadanie 19
+
+Napisz skrypt który wyświetli ```nazwiska``` oraz ```datę zatrudnienia``` ```pracowników```, którzy zaczęli
+pracę w ```1991 roku```.
+
+```
+SELECT last_name, start_date FROM emp WHERE start_date LIKE '%%-%%-1991';
+```
+
+### Zadanie 20
+
+Napisz skrypt który wyświetli ```nazwiska
+pracowników```, których ```drugą
+literą nazwiska``` jest ```a```.
+
+```
+SELECT last_name FROM emp WHERE last_name LIKE '_a%';
+```
+
+### Zadanie 21
+
+Napisz skrypt który wyświetlić ```nazwy firm``` z tabeli ```customer```, które
+zawierają litery ```s``` i ```o``` oddzielone ```jednym znakiem```.
+
+```
+SELECT name FROM customer WHERE name LIKE '%s_o%';
+```
