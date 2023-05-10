@@ -154,14 +154,14 @@ Napisz skrypt który z tabeli departamentów wybierze identyfikator regionu oraz
 ```
 SELECT 
     region_id "ID Regionu",
-    name "Nazwa"
+    name      "Nazwa"
 FROM
     dept
 
 UNION
 
 SELECT 
-    id "ID Regionu",
+    id   "ID Regionu",
     name "Nazwa"
 FROM
     region
@@ -219,8 +219,8 @@ Napisz skrypt który wyświetli identyfikator departamentu oraz nazwisko pracown
 
 ```
 SELECT
-    dept_id "NR DEP/REG",
-    last_name "Naziwsko/Nazwa"
+    dept_id   "NR DEP / REG",
+    last_name "Naziwsko / Nazwa"
 FROM 
     emp
 
@@ -244,14 +244,14 @@ Napisz skrypt który wyświetli z tabeli ```customer``` identyfikatory klientów
 
 ```
 SELECT
-    id
+    id "ID Klienta"
 FROM
     customer
 
 INTERSECT
 
 SELECT
-    customer_id
+    customer_id "ID Klienta"
 FROM
     ord;
 ```
@@ -264,14 +264,14 @@ Napisz skrypt który wyświetli identyfikatory klientów, którzy nie złożyli 
 
 ```
 SELECT
-    id
+    id "ID Klienta"
 FROM
     customer
 
 MINUS
 
 SELECT
-    customer_id
+    customer_id "ID Klienta"
 FROM
     ord;
 ```

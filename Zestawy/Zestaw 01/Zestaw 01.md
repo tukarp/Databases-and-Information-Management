@@ -25,9 +25,9 @@ Napisz skrypt który wyświetli wszystkie identyfikatory departamentów, nazwisk
 
 ```
 SELECT
-    dept_id,
-    last_name,
-    manager_id
+    dept_id    "ID Departamentu",
+    last_name  "Nazwisko",
+    manager_id "ID Menadzera"
 FROM
     emp
 ```
@@ -40,8 +40,8 @@ Napisz skrypt który wyświetli roczne dochody wszystkich pracowników wraz z ic
 
 ```
 SELECT
-    salary * 12,
-    last_name
+    (salary * 12) "Roczne Dochody",
+    last_name     "Nazwisko"
 FROM
     emp
 ```
@@ -55,9 +55,9 @@ Napisz skrypt który wyświetli dane osobowe pracowników, zarobki miesięczne, 
 ```
 SELECT
     first_name "Imie",
-    last_name "Nazwisko",
-    salary "Zarobki miesieczne",
-    (salary * 12) + 1000 "Zarobki roczne z premia"
+    last_name  "Nazwisko",
+    salary     "Zarobki miesieczne",
+    ((salary * 12) + 1000) "Zarobki Roczne z Premia"
 FROM
     emp
 ```
@@ -70,10 +70,10 @@ Napisz skrypt który wyświetli dane osobowe pracowników, zarobki miesięczne, 
 
 ```
 SELECT
-    first_name "Imie",
-    last_name "Nazwisko",
-    (salary * 1.08) "Zarobki miesieczne",
-    (salary * 1.08) * 12 "Zarobki roczne"
+    first_name      "Imie",
+    last_name       "Nazwisko",
+    (salary * 1.08) "Zarobki Miesieczne",
+    ((salary * 1.08) * 12) "Zarobki Roczne"
 FROM
     emp
 ```
@@ -86,8 +86,8 @@ Napisz skrypt który wyświetli nazwisko oraz roczny dochód wraz z dodatkiem ``
 
 ```
 SELECT
-    last_name,
-    (salary * 12) + (salary * 0.05) "ROCZNY DOCHOD"
+    last_name "Nazwisko",
+    ((salary * 12) + (salary * 0.05)) "Roczny Dochod"
 FROM
     emp
 ```
@@ -126,9 +126,9 @@ Napisz skrypt który wyświetli nazwiska pracowników, pensję, stanowiska i ich
 
 ```
 SELECT
-    last_name,
-    salary,
-    title,
+    last_name "Nazwisko",
+    salary    "Pensja",
+    title     "Stanowisko",
     (salary * commission_pct / 100) "Prowizja"
 FROM
     emp
@@ -142,10 +142,10 @@ Napisz skrypt który zmodyfikuję poprzednie zapytanie tak, aby zamiast (```null
 
 ```
 SELECT
-    last_name,
-    salary,
-    title,
-    NVL(salary * commission_pct / 100, 0)
+    last_name "Nazwisko",
+    salary    "Pensja",
+    title     "Stanowisko",
+    NVL(salary * commission_pct / 100, 0) "Prowizja"
 FROM
     emp
 ```
@@ -158,23 +158,22 @@ Napisz skrypt który Wyświetli nazwy działów z tabeli ```dept```. Zmodyfikuj 
 
 ```
 SELECT
-    DISTINCT name
+    DISTINCT name "Nazwy"
 FROM
     dept
 ```
 
 ### Zadanie 12
 
-Napisz skrypt który dla każdego pracownika wyświetli nazwisko, numer departamentu,
-wynagrodzenie oraz datę zatrudnienia. Posortuj wynik względem numeru departamentu oraz malejąco względem wynagrodzenia.
+Napisz skrypt który dla każdego pracownika wyświetli nazwisko, numer departamentu, wynagrodzenie oraz datę zatrudnienia. Posortuj wynik względem numeru departamentu oraz malejąco względem wynagrodzenia.
 
 ### Rozwiązanie
 
 ```
 SELECT
-    last_name,
-    dept_id,
-    start_date
+    last_name  "Nazwisko",
+    dept_id    "ID Departamentu",
+    start_date "Data Zatrudnienia"
 FROM
     emp
 ORDER BY
@@ -190,9 +189,9 @@ Napisz skrypt który wyświetli nazwiska pracowników, numery działów oraz dat
 
 ```
 SELECT
-    last_name,
-    dept_id,
-    start_date
+    last_name  "Nazwisko",
+    dept_id    "ID Depatramentu",
+    start_date "Data Zatrudnienia"
 FROM
     emp
 ORDER BY
@@ -207,9 +206,9 @@ Napisz skrypt który wyświetli dane osobowe oraz stanowisko pracowników o nazw
 
 ```
 SELECT
-    first_name,
-    last_name,
-    title
+    first_name "Imie",
+    last_name  "Nazwisko",
+    title      "Stanowisko"
 FROM
     emp
 WHERE
@@ -224,8 +223,8 @@ Napisz skrypt który wyświetli nazwisko oraz datę zatrudnienia tych pracownik�
 
 ```
 SELECT
-    last_name,
-    start_date
+    last_name  "Nazwisko",
+    start_date "Data Zatrudnienia"
 FROM
     emp
 WHERE
@@ -241,9 +240,9 @@ Napisz skrypt który wyświetli identyfikatory departamentów, nazwy oraz identy
 
 ```
 SELECT
-    id,
-    name,
-    region_id
+    id        "ID",
+    name      "Nazwa",
+    region_id "ID Regionu"
 FROM
     dept
 WHERE
@@ -259,7 +258,7 @@ Napisz skrypt który wyświetlić dane wszystkich pracowników, których nazwisk
 
 ```
 SELECT
-    *
+    * "Nazwiska Na Litere `M`"
 FROM
     emp
 WHERE
@@ -268,13 +267,13 @@ WHERE
 
 ### Zadanie 18
 
-Napisz skrypt który  Wyświetli wszystkie dane osobowe pracowników, których nazwiska nie zawierają litery ```a```.
+Napisz skrypt który wyświetli wszystkie dane osobowe pracowników, których nazwiska nie zawierają litery ```a```.
 
 ### Rozwiązanie
 
 ```
 SELECT
-    *
+    * "Nazwiska Bez `A`"
 FROM
     emp
 WHERE
@@ -290,8 +289,8 @@ pracę w ```1991 roku```.
 
 ```
 SELECT
-    last_name,
-    start_date
+    last_name  "Nazwisko",
+    start_date "Data Zatrudnienia"
 FROM
     emp
 WHERE
@@ -306,7 +305,7 @@ Napisz skrypt który wyświetli nazwiska pracowników, których drugą literą n
 
 ```
 SELECT
-    last_name
+    last_name "Nazwiska"
 FROM
     emp
 WHERE
@@ -321,7 +320,7 @@ Napisz skrypt który wyświetlić nazwy firm z tabeli ```customer```, które zaw
 
 ```
 SELECT
-    name
+    name "Nazwy Firm"
 FROM
     customer
 WHERE

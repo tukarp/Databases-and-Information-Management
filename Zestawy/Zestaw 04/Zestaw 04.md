@@ -57,7 +57,7 @@ FROM
     emp,
     dept
 WHERE
-        emp.last_name = 'Menchu'
+    emp.last_name = 'Menchu'
     AND emp.dept_id = dept.id;
 ```
 
@@ -76,7 +76,7 @@ FROM
     emp,
     dept
 WHERE
-        emp.dept_id = dept.id
+    emp.dept_id = dept.id
     AND emp.commission_pct IS NOT NULL;
 ```
 
@@ -100,7 +100,7 @@ FROM
     item,
     emp
 WHERE
-        ord.id = 101
+    ord.id = 101
     AND ord.sales_rep_id = emp.id
     AND customer.id = ord.customer_id
     AND ord.id = item.ord_id
@@ -187,7 +187,8 @@ FROM
     emp e1
 CONNECT BY
     PRIOR e1.id = e1.manager_id
-START WITH e1.manager_id IS NULL
+START WITH 
+    e1.manager_id IS NULL
 ORDER BY
     level;
 ```

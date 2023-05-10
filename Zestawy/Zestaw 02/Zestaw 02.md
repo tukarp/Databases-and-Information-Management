@@ -15,9 +15,9 @@ Napisz skrypt który wyświetli imię i nazwisko (tylko małymi literami), ident
 ```
 SELECT
     LOWER(first_name) "Imie",
-    LOWER(last_name) "Nazwisko",
-    INITCAP(userid) "Identyfikator" ,
-    UPPER(title) "Stanowisko"
+    LOWER(last_name)  "Nazwisko",
+    INITCAP(userid)   "Identyfikator",
+    UPPER(title)      "Stanowisko"
 FROM
     emp
 WHERE
@@ -33,7 +33,7 @@ Napisz skrypt który wyświetli imię i nazwisko wszystkich pracowników, którz
 ```
 SELECT
     first_name "Imie",
-    last_name "Nazwisko"
+    last_name  "Nazwisko"
 FROM
     emp
 WHERE
@@ -48,7 +48,7 @@ Napisz skrypt który wyświetli nazwę oraz państwo dla wszystkich klientów (t
 
 ```
 SELECT
-    ((name || ' - ' || country )) "Nazwa i panstwo"
+    ((name || ' - ' || country )) "Nazwa i Panstwo"
 FROM
     customer
 WHERE
@@ -64,8 +64,8 @@ równe ```Ace``` (tabela ```product```).
 
 ```
 SELECT
-    name "Nazwa",
-    LENGTH(name) "Liczba znakow"
+    name         "Nazwa",
+    LENGTH(name) "Liczba Znakow"
 FROM
     product
 WHERE
@@ -82,8 +82,8 @@ Napisz skrypt który wyświetli wartość ```41.5843``` zaokrągloną do setnych
 
 ```
 SELECT 
-    ROUND(41.5843, 2) "Setne",
-    ROUND(41.5843, 0) "Calkowite",
+    ROUND(41.5843, 2)  "Setne",
+    ROUND(41.5843, 0)  "Calkowite",
     ROUND(41.5843, -1) "Dziesiatki"
 FROM
     dual;
@@ -97,8 +97,8 @@ Napisz skrypt który wyświetli wartość ```41.5843``` obciętą do części se
 
 ```
 SELECT
-    ROUND(41.5843, 2) "Setne",
-    FLOOR(41.5843) "Calkowite",
+    ROUND(41.5843, 2)  "Setne",
+    FLOOR(41.5843)     "Calkowite",
     ROUND(41.5843, -1) "Dziesiatki"
 FROM
     dual;
@@ -113,7 +113,7 @@ większe niż ```1380```. Wyświetl ich nazwiska.
 
 ```
 SELECT
-    last_name "Nazwisko",
+    last_name                   "Nazwisko",
     MOD(salary, commission_pct) "Reszta"
 FROM
     emp
@@ -179,7 +179,7 @@ Napisz skrypt który dla pracowników zatrudnionych mniej niż ```368``` miesię
 ```
 SELECT
     id "ID", 
-    TRUNC((months_between(sysdate, start_date)),0) "Liczba Miesiecy",
+    TRUNC((months_between(sysdate, start_date)), 0) "Liczba Miesiecy",
     add_months(start_date, 3) "Po Stazu"
 FROM
     emp
@@ -195,10 +195,10 @@ Napisz skrypt który na potrzeby inwentaryzacji dostaw wyświetli chronologiczni
 
 ```
 SELECT
-    product_id "Produkt",
-    restock_date "Dostawa",
+    product_id                "Produkt",
+    restock_date              "Dostawa",
     next_day(restock_date, 5) "Piatek Po Dostawie",
-    last_day(restock_date) "Ostatni Dzien Miesiaca"
+    last_day(restock_date)    "Ostatni Dzien Miesiaca"
 FROM
     inventory
 WHERE
