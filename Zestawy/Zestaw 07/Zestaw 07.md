@@ -2,4 +2,4 @@
 
 ## Zestawy
 
-### Zestaw 07
+### Zestaw 07 - Modyfikacja bazy danych

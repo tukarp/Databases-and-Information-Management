@@ -1,36 +1,4 @@
-# Bazy Danych i Zarządzanie Informacją
-
-## Zestawy
-
-### Zestaw 08 - Tworzenie i modyfikacja tabel
-
-### Zadanie 1
-
-```a)``` Napisz skrypt który tworzy strukturę bazy danych uwzględniającą następujące tabele:
-
-- ```pracownicy```,
-- ```stanowiska```,
-- ```oddziały```,
-- ```regiony```,
-- ```klienci```,
-- ```zamówienia```.
-
-```b)``` W każdej z powyższych tabel uwzględnić tylko niezbędne kolumny, które będą służyć do przechowywania podstawowych danych np. tabela pracownicy może mieć atrybuty:
-- ```nr```,
-- ```imię```,
-- ```nazwisko```,
-- ```stanowisko```,
-- ```oddział```,
-- ```zarobki```,
-- ```przełożony```.
-
-```c)``` Napisz skrypt który w tabelach wprowadzi odpowiednie ```więzy integralności``` (ograniczenia) – ```klucze główne``` i ```obce```.
-
-```d)``` Napisz skrypt który uzupełni dane w każdej tabeli.
-
-### Rozwiązanie
-
-```
+-- Zadanie 1
 set echo off
 
 -- Utworzenie tabeli pracowników
@@ -226,27 +194,8 @@ ALTER TABLE zamowienia
     FOREIGN KEY (nr_sprzedawcy) REFERENCES pracownicy (nr);
 
 set echo on
-```
 
-### Zadanie 2
-
-```a) ``` Napisz skrypt który doda do ```klienci``` kolumnę umożliwiającą przechowywanie adresu email.
-
-```b) ``` Napisz skrypt który zmodyfikuję tabelę ```zamówienia``` w taki sposób, aby można było przechowywać informację o tym, czy dane zgłoszenie jest zrealizowane.
-
-```c) ``` Napisz skrypt który doda kolumnę umożliwiającą przechowywanie informacji o dacie (i godzinie) zrealizowania zamówienia.
-
-```d) ``` Napisz skrypt który wyświetli jakie zmiany należy wprowadzić do tabeli ```zamówienia```, żeby można było przechowywać informacje o statusie realizacji zamówienia, np:
-- ```Nowe zamówienie```, 
-- ```Realizowane```,
-- ```Przesyłka wysłana```,
-- ```Zakończone```.
-
-```e) ``` Napisz skrypt który nową tabelę ```statusy``` tak, żeby odpowiednia kolumna utworzona w poprzednim zadaniu miała ```ograniczenie klucza obcego```.
-
-### Rozwiązanie
-
-```
+-- Zadanie 2
 set echo off
 
 -- Utworzenie tabeli pracowników
@@ -451,4 +400,3 @@ ALTER TABLE zamowienia
     FOREIGN KEY (nr_sprzedawcy) REFERENCES pracownicy (nr);
 
 set echo on
-```
