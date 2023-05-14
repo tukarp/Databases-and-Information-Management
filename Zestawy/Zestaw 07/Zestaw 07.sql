@@ -10,6 +10,31 @@
 -- Zadanie 5
 
 -- Zadanie 6
+-- Zadanie 6a
+
+-- Zadanie 6b
+
+-- Zadanie 6c
+
+-- Zadanie 6d
+
+-- Zadanie 6e
+
+-- Zadanie 6f
+
+-- Zadanie 6g
+
+-- Zadanie 6h
+
+-- Zadanie 6i
+
+-- Zadanie 6j
+
+-- Zadanie 6k
+
+-- Zadanie 6l
+
+-- Zadanie 6m
 
 -- Zadanie 7
 
@@ -22,6 +47,9 @@
 -- Zadanie 11
 
 -- Zadanie 12
+-- Zadanie 12a
+
+-- Zadanie 12b
 
 -- Zadanie 13
 

@@ -1,18 +1,5 @@
-# Bazy Danych i Zarządzanie Informacją
-
-## Zestawy
-
-### Zestaw 12 - ```PL/SQL``` – procedury, funkcje, pakiety
-
-### Zadanie 1
-
-Napisz skrypt który zaimplementuje:
-
-- ```add_emp``` – procedurę dodawania nowego pracownika do tabeli ```emp```. Numer ID powinien być pobierany automatycznie ze zdefiniowanej w tym celu sekwencji.
-
-### Rozwiązanie
-
-```
+-- Zestaw 12 - PL/SQL – procedury, funkcje, pakiety
+-- Zadanie 1
 PROCEDURE add_emp (
     in_last_name      emp.last_name%TYPE,
     in_first_name     emp.first_name%TYPE,
@@ -60,17 +47,8 @@ BEGIN
         WHEN value_error THEN
             DBMS_OUTPUT.PUT_LINE('VALUE ERROR');
 END add_emp;
-```
 
-### Zadanie 2
-
-Napisz skrypt który zaimplementuje:
-
-- ```change_emp``` – procedurę modyfikującą dane wskazanego pracownika.
-
-### Rozwiązanie
-
-```
+-- Zadanie 2
 PROCEDURE change_emp (
     in_id             emp.id%TYPE,
     in_last_name      emp.last_name%TYPE,
@@ -108,17 +86,8 @@ BEGIN
         WHEN value_error THEN
             DBMS_OUTPUT.PUT_LINE('VALUE ERROR');
 END change_emp;
-```
 
-### Zadanie 3
-
-Napisz skrypt który zaimplementuje:
-
-- ```delete_emp``` – procedurę kasującą dane wskazanego pracownika.
-
-### Rozwiązanie
-
-```
+-- Zadanie 3
 PROCEDURE delete_emp (
     in_id emp.id%TYPE
 ) IS
@@ -130,17 +99,8 @@ BEGIN
         WHEN no_data_found THEN
             DBMS_OUTPUT.PUT_LINE('NO DATA FOUND EXCEPTION');
 END delete_emp;
-```
 
-### Zadanie 4
-
-Napisz skrypt który zaimplementuje:
-
-- ```change_salary``` – procedurę zmieniającą zarobków wskazanego pracownika. Podajemy procentową zmianę zarobków.
-
-### Rozwiązanie
-
-```
+-- Zadanie 4
 PROCEDURE change_salary (
     in_id      emp.id%TYPE,
     in_percent NUMBER
@@ -152,17 +112,8 @@ BEGIN
     WHERE
         id = in_id;
 END change_salary;
-```
 
-### Zadanie 5
-
-Napisz skrypt który zaimplementuje:
-
-- ```top_n_emp``` – procedurę wyświetlającą listę ```n``` z danymi pracowników którzy zarabiają najwięcej.
-
-### Rozwiązanie
-
-```
+-- Zadanie 5
 PROCEDURE emp_top_n (
     in_n NUMBER
 ) IS
@@ -211,17 +162,8 @@ PROCEDURE emp_top_n (
         WHEN no_data_found THEN
             DBMS_OUTPUT.PUT_LINE('NO DATA FOUND EXCEPTION');
 END emp_top_n;
-```
 
-### Zadanie 6
-
-Napisz skrypt który zaimplementuje:
-
-- ```change_dept``` – procedurę zmieniającą przypisanie pracownika do wydziału.
-
-### Rozwiązanie
-
-```
+-- Zadanie 6
 PROCEDURE change_dept (
     in_id      emp.id%TYPE,
     in_dept_id emp.dept_id%TYPE
@@ -235,23 +177,8 @@ UPDATE emp
         WHEN uv_deptid_not_exist THEN
             DBMS_OUTPUT.PUT_LINE('DEPT_ID NOT EXIST EXCEPTION');
 END change_dept;
-```
 
-### Zadanie 7
-
-Napisz skrypt który zaimplementuje:
-
-- ```stat_emp``` – funkcję zwracającą wartości zarobków maksymalnych, minimalnych, średniej lub też sumy zarobków wszystkich pracowników. Funkcja powinna przyjmować tylko jeden z czterech parametrów:
-    - ```MAX```,
-    - ```MIN```,
-    - ```AVG```,
-    - ```SUM```.
-
-Podanie innego parametru powinno wygenerować stosowne ostrzeżenie.
-
-### Rozwiązanie
-
-```
+-- Zadanie 7
 FUNCTION stat_emp(in_parameter VARCHAR2) RETURN NUMBER
 AS
     uv_value emp.salary%TYPE;
@@ -281,4 +208,3 @@ EXCEPTION
     WHEN no_data_found THEN
         DBMS_OUTPUT.PUT_LINE('NO DATA FOUND EXCEPTION');
 END stat_emp;
-```
