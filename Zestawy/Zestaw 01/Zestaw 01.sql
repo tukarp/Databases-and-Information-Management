@@ -1,3 +1,4 @@
+-- Zestaw 01 - SQL - proste instrukcje wybierania danych
 -- Zadanie 1
 SELECT
     *

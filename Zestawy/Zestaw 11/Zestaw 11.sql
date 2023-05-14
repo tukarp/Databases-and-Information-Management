@@ -1,23 +1,7 @@
-# Bazy Danych i Zarządzanie Informacją
-
-## Zestawy
-
-### Zestaw 11 - Wstęp do języka PL/SQL
-
-### Zadanie 1
-
-Napisz skrypt który utworzy anonimowy blok ```PL/SQL```, w którym zadeklarowane zostaną zmienne:
-
-- ```a``` - ```NUMBER```,
-- ```b``` - ```VARCHAR2```,
-- ```c``` - ```DATE```. 
-
-Zainicjuj zmienne dowolnymi wartościami, zaś jedną z nich określić jako ```CONSTANT```. Wyświetl w konsoli zadeklarowane zmienne.
-
-### Rozwiązanie
-
-```
+-- Zestaw 11 - Wstęp do języka PL/SQL
 SET SERVEROUTPUT ON;
+
+-- Zadanie 1
 DECLARE
     a NUMBER := 5;
     b CONSTANT VARCHAR2(3) := 'abc';
@@ -27,15 +11,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('b = '||b);
     DBMS_OUTPUT.PUT_LINE('c = '||c);
 END;
-```
 
-### Zadanie 2
-
-Napisz skrypt który stworzy blok wyświetlający liczbę dni, tygodni i miesięcy które minęły od określonej daty z przeszłości (np. własnych urodzin). Wyniki przedstawić w przejrzystej formie wraz z opisem.
-
-### Rozwiązanie
-
-```
+-- Zadanie 2
 DECLARE
     birthday DATE := to_date('29-05-2002', 'DD/MM/YYYY');
     today DATE := SYSDATE;
@@ -45,15 +22,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(TO_CHAR(FLOOR(today - birthday) / 7)   || 'Tygodni' );
     DBMS_OUTPUT.PUT_LINE(TO_CHAR(FLOOR(today - birthday))       || 'Dni'     );
 END;
-```
 
-### Zadanie 3
-
-Napisz skrypt który stworzy anonimowy blok ```PL/SQL```, wyświetlający dane osobowe tych pracowników z tabeli ````emp```, którzy zarabiają najmniej i najwięcej.
-
-### Rozwiązanie
-
-```
+-- Zadanie 3
 DECLARE
     uv_last_name    emp_last_name%TYPE;
     uv_first_name   emp.first_name%TYPE;
@@ -101,17 +71,9 @@ BEGIN
             emp;
     DBMS_OUTPUT.PUT_LINE('Zapytanie zwróciło ' || counter || ' rekordów.');
 END;
-```
 
-### Zadanie 4
-
-Napisz skrypt który wyświetli w bloku ```PL/SQL``` dane wszystkich pracowników. Zadanie wykonać przy użyciu:
-
-- ```a)``` kursora jawnego z wykorzystaniem pętli ```LOOP```,
-
-### Rozwiązanie
-
-```
+-- Zadanie 4
+-- Zadanie 4a
 DECLARE
     imie        VARCHAR2(25);
     nazwisko    VARCHAR2(25);
@@ -132,13 +94,8 @@ BEGIN
     END LOOP;
     CLOSE i;
 END;
-```
 
-```b)```  kursora niejawnego z wykorzystaniem pętli ```FOR```.
-
-### Rozwiązanie
-
-```
+-- Zadanie 4b
 DECLARE
     CURSOR i IS
     SELECT
@@ -153,15 +110,8 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE(uv_emp.first_name || ' ' || uv_emp.last_name);
     END LOOP;
 END;
-```
 
-### Zadanie 5
-
-Napisz skrypt który wyświetli zamówienia z tabeli ```ord```, które zostały złożone w jakimś okresie czasu. Dodatkowo wyświetlić dane klienta składającego dane zamówienie oraz dane pracownika opiekującego się tym zamówieniem.
-
-### Rozwiązanie
-
-```
+-- Zadanie 5
 DECLARE
     -- Daty
 	uv_from                 DATE := TO_DATE('31/08/1992', 'DD/MM/YYYY');
@@ -230,19 +180,8 @@ BEGIN
 	END LOOP;
 	CLOSE i;
 END;
-```
 
-### Zadanie 6
-
-Napisz skrypt który zmodyfikuje zarobki pracowników:
-
-- ```a)```  dla zarabiających poniżej ½ średniej wszystkich zarobków, wprowadzi podwyżkę o 20%,
-- ```b)```  dla zarabiających pomiędzy ½ a ⅚ średniej, wprowadzi podwyżkę o 10%,
-- ```c)```  dla pozostałych pracowników wprowadzi podwyżkę o 5%.
-
-### Rozwiązanie
-
-```
+-- Zadanie 6
 DECLARE
     uv_avg NUMBER;
 BEGIN
@@ -272,4 +211,3 @@ BEGIN
         END IF;
     END LOOP;
 END;
-```

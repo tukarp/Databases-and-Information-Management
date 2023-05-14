@@ -1,3 +1,5 @@
+-- Zestaw 04 - Złączenia tabel
+-- Złączenia równościowe
 -- Zadanie 1
 SELECT
     emp.first_name "Imie",
@@ -64,6 +66,7 @@ WHERE
     AND ord.id = item.ord_id
     AND item.product_id = product.id;
 
+-- Złączenia zewnętrzne
 -- Zadanie 6
 SELECT
     NVL(emp.last_name, '-')   "Nazwisko",
@@ -88,6 +91,7 @@ WHERE
 ORDER BY
     customer.id;
 
+-- Złączenia zwrotne
 -- Zadanie 8
 SELECT
     (e1.last_name || ' pracuje dla ' || e2.last_name) "Kto dla kogo"
@@ -98,6 +102,7 @@ WHERE
     e1.manager_id IS NOT NULL
     AND e1.manager_id = e2.id;
 
+-- CONNECT BY PRIOR, START WITH oraz LEVEL
 -- Zadanie 9
 SELECT
     e1.first_name                    "Imie",

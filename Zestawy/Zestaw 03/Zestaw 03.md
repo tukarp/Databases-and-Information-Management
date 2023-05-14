@@ -2,7 +2,7 @@
 
 ## Zestawy
 
-### Zestaw 03 - SQL – funkcje agregujące, grupowanie, operacje na zbiorach
+### Zestaw 03 - ```SQL``` – funkcje agregujące, grupowanie, operacje na zbiorach
 
 ### ```Funkcje agregujące```
 

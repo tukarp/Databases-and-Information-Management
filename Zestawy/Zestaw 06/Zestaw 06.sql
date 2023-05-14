@@ -1,3 +1,4 @@
+-- Zestaw 06 - Zapytania SQL
 -- Zadanie 1
 SELECT
     emp.first_name "Imie",

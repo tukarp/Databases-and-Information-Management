@@ -1,3 +1,5 @@
+-- Zestaw 02 - Funkcje Oracle
+-- Funkcje znakowe LOWER, UPPER, CONCAT, SUBSTR, LENGTH, NVL
 -- Zadanie 1
 SELECT
     LOWER(first_name) "Imie",
@@ -35,6 +37,7 @@ FROM
 WHERE
     name LIKE 'Ace%';
 
+-- Funkcje liczbowe ROUND, TRUNC, MOD
 -- Zadanie 5
 SELECT 
     ROUND(41.5843, 2)  "Setne",
@@ -70,6 +73,7 @@ WHERE
     salary > 1380
     AND commission_pct IS NOT NULL;
 
+-- Operacje na datach SYSDATE, MONTHS_BETWEEN, ADD_MONTHS, NEXT_DAY, ROUND, TRUNC, EXTRACT
 -- Zadanie 8
 SELECT
     sysdate "Aktualna Data"
@@ -118,6 +122,7 @@ FROM
 WHERE
     EXTRACT(year from start_date) = 1991;
 
+-- Funkcje konwersji TO_CHAR, TO_DATE
 -- Zadanie 13
 SELECT
     id "ID",

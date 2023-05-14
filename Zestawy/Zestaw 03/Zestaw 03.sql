@@ -1,3 +1,5 @@
+-- Zestaw 03 - SQL – funkcje agregujące, grupowanie, operacje na zbiorach
+-- Funkcje agregujące
 -- Zadanie 1
 SELECT 
     MAX(salary)       "Maksymalna",
@@ -24,6 +26,7 @@ WHERE
     dept_id = 31 
     AND commission_pct IS NOT NULL;
 
+-- GROUP BY oraz HAVING
 -- Zadanie 4
 SELECT 
     credit_rating        "Zdolnosc Kredytowa",
@@ -76,6 +79,7 @@ HAVING
 GROUP BY
     last_name;
 
+-- Operatory UNION, UNION ALL, INTERSECT, MINUS (łączenie pionowe tabel)
 -- Zadanie 9
 SELECT 
     region_id "ID Regionu",

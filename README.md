@@ -13,9 +13,9 @@
 - [Zestaw 06 - Zapytania SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2006/Zestaw%2006.md)
 - [Zestaw 07 - Modyfikacja bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2007/Zestaw%2007.md)
 - [Zestaw 08 - Tworzenie i modyfikacja tabel](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2008/Zestaw%2008.md)
-- [Zestaw 09](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2009/Zestaw%2009.md)
-- [Zestaw 10](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010/Zestaw%2010.md)
-- [Zestaw 11](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011/Zestaw%2011.md)
+- [Zestaw 09 - Modelowanie bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2009/Zestaw%2009.md)
+- [Zestaw 10 - Implementacja przykładowej bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010/Zestaw%2010.md)
+- [Zestaw 11 - Wstęp do języka PL/SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011/Zestaw%2011.md)
 - [Zestaw 12](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2012/Zestaw%2012.md)
 
 ## Notatki

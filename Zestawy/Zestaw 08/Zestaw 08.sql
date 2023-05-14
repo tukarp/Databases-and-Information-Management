@@ -1,3 +1,4 @@
+-- Zestaw 08 - Tworzenie i modyfikacja tabel
 -- Zadanie 1
 set echo off
 
