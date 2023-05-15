@@ -17,9 +17,13 @@
 - [Zestaw 10 - Implementacja przykładowej bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010/Zestaw%2010.md)
 - [Zestaw 11 - Wstęp do języka PL/SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011/Zestaw%2011.md)
 - [Zestaw 12 - PL/SQL – procedury, funkcje, pakiety](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2012/Zestaw%2012.md)
-- [Notatki](#notatki)
-    - []()
+
+### Notatki
+
+- [Notatki](#notatki-1)
+- []()
     - []()
     - []()
 
 ## Notatki
+
