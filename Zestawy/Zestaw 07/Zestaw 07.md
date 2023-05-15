@@ -15,9 +15,9 @@ Napisz definicję poleceń:
 ### Rozwiązanie
 
 ```
-COMMIT - Funkcja zatwierdza wszystkie wykonane do tej pory zmiany,
-ROLLBACK - Funkcja wycofująca dokonane przed zapisaniem zmiany,
-SAVEPOINT - Funkcja tworząca punkty kontrolne.
+COMMIT - komenda służąca do zatwierdzenia zmian w bazie danych,
+ROLLBACK - komenda służąca do cofnięcia niezatwierdzonych komendą COMMIT zmian,
+SAVEPOINT - komenda służąca do utowrzenia punktu kontrolnego który możemy wykorzystać do bardziej precyzyjnego wywoływania zmian.
 ```
 
 ### Zadanie 2
