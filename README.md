@@ -83,21 +83,21 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 
 ### Operatory
 
-- ```porównania```: 
+- porównania: 
     - ```=```, ```!=```, ```^=```, ```>```, ```<```, ```>=```, ```<=```,
-- ```arytmetyczne```:
+- arytmetyczne:
     - ```+```, ```-```, ```*```, ```/```,
-- ```logiczne```:
+- logiczne:
     - ```AND```, ```OR```, ```NOT```,
-- ```konkatenacji```:
+- konkatenacji:
     - ```||```,
-- ```przedziałów```:
+- przedziałów:
     - ```[NOT] BEETWEN ... AND```, ```[NOT] IN```,
-- ```wzorców```:
+- wzorców:
     - ```[NOT] LIKE```,
-- ```sortowania```:
+- sortowania:
     - ```ASC```, ```DESC```,
-- ```sprawdzenia pustości```:
+- sprawdzenia pustości:
     - ```IS [NOT] NULL```.
 
 ### Podstawowe komendy
