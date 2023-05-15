@@ -4,7 +4,7 @@
 
 ### Zestaw 03 - ```SQL``` – funkcje agregujące, grupowanie, operacje na zbiorach
 
-### ```Funkcje agregujące```
+### Funkcje agregujące
 
 ### Zadanie 1
 
@@ -54,7 +54,7 @@ WHERE
     AND commission_pct IS NOT NULL;
 ```
 
-### ```GROUP BY``` oraz ```HAVING```
+### Funkcje grupujące
 
 ### Zadanie 4
 
@@ -143,7 +143,7 @@ GROUP BY
     last_name;
 ```
 
-### Operatory ```UNION```, ```UNION ALL```, ```INTERSECT```, ```MINUS``` (```łączenie pionowe tabel```)
+### Operatory łączenia pionowego tabel
 
 ### Zadanie 9
 

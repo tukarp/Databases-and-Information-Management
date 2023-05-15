@@ -102,7 +102,7 @@ WHERE
     e1.manager_id IS NOT NULL
     AND e1.manager_id = e2.id;
 
--- CONNECT BY PRIOR, START WITH oraz LEVEL
+-- Złączenia drzewiaste
 -- Zadanie 9
 SELECT
     e1.first_name                    "Imie",

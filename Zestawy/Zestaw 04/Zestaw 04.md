@@ -4,7 +4,7 @@
 
 ### Zestaw 04 - Złączenia tabel
 
-### ```Złączenia równościowe```
+### Złączenia równościowe
 
 ### Zadanie 1
 
@@ -107,7 +107,7 @@ WHERE
     AND item.product_id = product.id;
 ```
 
-### ```Złączenia zewnętrzne```
+### Złączenia zewnętrzne
 
 ### Zadanie 6
 
@@ -147,7 +147,7 @@ ORDER BY
     customer.id;
 ```
 
-### ```Złączenia zwrotne```
+### Złączenia zwrotne
 
 ### Zadanie 8
 
@@ -166,7 +166,7 @@ WHERE
     AND e1.manager_id = e2.id;
 ```
 
-### ```CONNECT BY PRIOR```, ```START WITH``` oraz ```LEVEL```
+### Złączenia drzewiaste
 
 ### Zadanie 9
 

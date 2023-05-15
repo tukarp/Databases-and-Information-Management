@@ -4,7 +4,7 @@
 
 ### Zestaw 02 - Funkcje Oracle
 
-### Funkcje znakowe ```LOWER```, ```UPPER```, ```CONCAT```, ```SUBSTR```, ```LENGTH```, ```NVL```
+### Funkcje znakowe
 
 ### Zadanie 1
 
@@ -72,7 +72,7 @@ WHERE
     name LIKE 'Ace%';
 ```
 
-### Funkcje liczbowe ```ROUND```, ```TRUNC```, ```MOD```
+### Funkcje liczbowe
 
 ### Zadanie 5
 
@@ -138,7 +138,7 @@ WHERE
     AND commission_pct IS NOT NULL;
 ```
 
-### Operacje na datach ```SYSDATE```, ```MONTHS_BETWEEN```, ```ADD_MONTHS```, ```NEXT_DAY```, ```ROUND```, ```TRUNC```, ```EXTRACT```
+### Operacje na datach
 
 ### Zadanie 8
 
@@ -224,7 +224,7 @@ WHERE
     EXTRACT(year from start_date) = 1991;
 ```
 
-### Funkcje konwersji ```TO_CHAR```, ```TO_DATE```
+### Funkcje konwersji
 
 ### Zadanie 13
 

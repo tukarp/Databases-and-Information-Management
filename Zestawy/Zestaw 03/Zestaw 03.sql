@@ -26,7 +26,7 @@ WHERE
     dept_id = 31 
     AND commission_pct IS NOT NULL;
 
--- GROUP BY oraz HAVING
+-- Funkcje grupujące
 -- Zadanie 4
 SELECT 
     credit_rating        "Zdolnosc Kredytowa",
@@ -79,7 +79,7 @@ HAVING
 GROUP BY
     last_name;
 
--- Operatory UNION, UNION ALL, INTERSECT, MINUS (łączenie pionowe tabel)
+-- Operatory łączenia pionowego tabel
 -- Zadanie 9
 SELECT 
     region_id "ID Regionu",
