@@ -172,7 +172,7 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 
 - ```COMMIT``` - komenda służąca do zatwierdzenia zmian w bazie danych,
 - ```ROLLBACK``` - komenda służąca do cofnięcia niezatwierdzonych komendą ```COMMIT``` zmian,
-- ```SAVEPOINT``` - komenda służąca do utowrzenia punktu kontrolnego który możemy wykorzyustać do bardziej precyzyjnego wywoływania zmian,
+- ```SAVEPOINT``` - komenda służąca do utowrzenia punktu kontrolnego który możemy wykorzystać do bardziej precyzyjnego wywoływania zmian,
 - ```INSERT``` - komenda służąca do wskazania rekordów,
 - ```UPDATE``` - komenda służąca do modyfikacji rekordów,
 - ```DELETE``` - komenda służąca do usuwania wierszy,
