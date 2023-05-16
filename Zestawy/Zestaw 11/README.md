@@ -49,7 +49,7 @@ END;
 
 ### Zadanie 3
 
-Napisz skrypt który stworzy anonimowy blok ```PL/SQL```, wyświetlający dane osobowe tych pracowników z tabeli ````emp```, którzy zarabiają najmniej i najwięcej.
+Napisz skrypt który stworzy anonimowy blok ```PL/SQL```, wyświetlający dane osobowe tych pracowników z tabeli ```emp```, którzy zarabiają najmniej i najwięcej.
 
 ### Rozwiązanie
 
