@@ -5,18 +5,18 @@
 ### Zestawy
 
 - [Zestawy](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy)
-- [Zestaw 01 - SQL - proste instrukcje wybierania danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2001/Zestaw%2001.md)
-- [Zestaw 02 - Funkcje Oracle](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2002/Zestaw%2002.md)
-- [Zestaw 03 - SQL – funkcje agregujące, grupowanie, operacje na zbiorach](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2003/Zestaw%2003.md)
-- [Zestaw 04 - Złączenia tabel](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2004/Zestaw%2004.md)
-- [Zestaw 05 - Podzapytania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2005/Zestaw%2005.md)
-- [Zestaw 06 - Zapytania SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2006/Zestaw%2006.md)
-- [Zestaw 07 - Modyfikacja bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2007/Zestaw%2007.md)
-- [Zestaw 08 - Tworzenie i modyfikacja tabel](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2008/Zestaw%2008.md)
-- [Zestaw 09 - Modelowanie bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2009/Zestaw%2009.md)
-- [Zestaw 10 - Implementacja przykładowej bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010/Zestaw%2010.md)
-- [Zestaw 11 - Wstęp do języka PL/SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011/Zestaw%2011.md)
-- [Zestaw 12 - PL/SQL – procedury, funkcje, pakiety](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2012/Zestaw%2012.md)
+- [Zestaw 01 - SQL - proste instrukcje wybierania danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2001)
+- [Zestaw 02 - Funkcje Oracle](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2002)
+- [Zestaw 03 - SQL – funkcje agregujące, grupowanie, operacje na zbiorach](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2003)
+- [Zestaw 04 - Złączenia tabel](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2004)
+- [Zestaw 05 - Podzapytania](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2005)
+- [Zestaw 06 - Zapytania SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2006)
+- [Zestaw 07 - Modyfikacja bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2007)
+- [Zestaw 08 - Tworzenie i modyfikacja tabel](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2008)
+- [Zestaw 09 - Modelowanie bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2009)
+- [Zestaw 10 - Implementacja przykładowej bazy danych](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2010)
+- [Zestaw 11 - Wstęp do języka PL/SQL](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2011)
+- [Zestaw 12 - PL/SQL – procedury, funkcje, pakiety](https://github.com/tukarp/Databases-and-Information-Management/blob/main/Zestawy/Zestaw%2012)
 
 ### Notatki
 
@@ -196,4 +196,3 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 - ```Model logiczny``` - model ten zawiera więcej szczegółów na temat koncepcji i relacji w domenie. Wskazuje atrybuty danych - ich typy i odpowiadające im długości. Pokazuje relacje pomiędzy encjami.
 
 - ```Model fizyczny``` - model ten ukazuje sfinalizowany projekt, który można zaimplementować jako relacyjną bazę danych w tym ```klucze główne```, ```klucze obce```, ```relacje```.
-
