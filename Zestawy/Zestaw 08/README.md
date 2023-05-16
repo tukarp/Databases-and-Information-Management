@@ -395,7 +395,7 @@ Create Table zamowienia (
     nr_sprzedawcy       NUMBER(7),
     cena                NUMBER(11, 2),
     typ_zaplaty         VARCHAR2(7),
-wypelnienie_wniosku VARCHAR2(1),
+    wypelnienie_wniosku VARCHAR2(1),
     CONSTRAINT zamowienia_nr_pk PRIMARY KEY (nr),
     CONSTRAINT zamowienia_typ_zaplaty_ck
         CHECK (typ_zaplaty in ('KARTA', 'GOTOWKA')),
