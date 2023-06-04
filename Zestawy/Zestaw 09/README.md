@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 09 - Modelowanie bazy danych
+## Zestaw 09 - Modelowanie bazy danych
 
 ### Zadanie
 
