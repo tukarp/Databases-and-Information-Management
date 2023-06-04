@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 10 - Implementacja przykładowej bazy danych
+## Zestaw 10 - Implementacja przykładowej bazy danych
 
 ### Przygotowanie bazy danych
 
