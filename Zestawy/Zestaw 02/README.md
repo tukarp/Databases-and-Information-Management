@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 02 - Funkcje Oracle
+## Zestaw 02 - Funkcje Oracle
 
 ### Funkcje znakowe
 
