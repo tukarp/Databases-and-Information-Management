@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 04 - Złączenia tabel
+## Zestaw 04 - Złączenia tabel
 
 ### Złączenia równościowe
 
