@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 08 - Tworzenie i modyfikacja tabel
+## Zestaw 08 - Tworzenie i modyfikacja tabel
 
 ### Zadanie 1
 
