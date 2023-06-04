@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 06 - Zapytania ```SQL```
+## Zestaw 06 - Zapytania ```SQL```
 
 ### Zadanie 1
 
