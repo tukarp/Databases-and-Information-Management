@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 05 - Podzapytania
+## Zestaw 05 - Podzapytania
 
 ### Zadanie 1
 
