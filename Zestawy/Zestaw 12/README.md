@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 12 - ```PL/SQL``` – procedury, funkcje, pakiety
+## Zestaw 12 - ```PL/SQL``` – procedury, funkcje, pakiety
 
 ### Zadanie 1
 
