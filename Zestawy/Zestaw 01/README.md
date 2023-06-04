@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 01 - ```SQL``` - proste instrukcje wybierania danych
+## Zestaw 01 - ```SQL``` - proste instrukcje wybierania danych
 
 ### Zadanie 1
 
