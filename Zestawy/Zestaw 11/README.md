@@ -1,8 +1,6 @@
 # Bazy Danych i Zarządzanie Informacją
 
-## Zestawy
-
-### Zestaw 11 - Wstęp do języka PL/SQL
+## Zestaw 11 - Wstęp do języka PL/SQL
 
 ### Zadanie 1
 
