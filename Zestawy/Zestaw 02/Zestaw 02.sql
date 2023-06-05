@@ -84,7 +84,7 @@ FROM
 -- Zadanie 9
 SELECT
     last_name 'Nazwisko',
-    ROUND((TRUNC((sysdate - start_date), 0)/7),0) 'Liczba Tygodni W Firmie'
+    ROUND((TRUNC((sysdate - start_date), 0)/7),0) 'Liczba Tygodni w Firmie'
 FROM
     emp
 WHERE
