@@ -52,14 +52,13 @@
     - ```Kartotekowe``` - jest to baza w której dane są przechowywane w postaci kart,
     - ```Relacyjne``` - jest to baza danych gdzie dane gromadzone, przetwarzane i przechowywane za pomocą komputera. Dane umieszczone są w tabelach pozostając w ścisłym związku ze sobą,
 - ```System Zarządzania Bazami Danych``` - to program komputerowy, służący do przechowywania i modyfikowania danych,
-- ```Tabela``` - to uporządkowany zbiór danych przechowywany w ujednolicony sposób.
+- ```Tabela``` - to uporządkowany zbiór danych przechowywany w ujednolicony sposób,
 - ```Rekord``` - to pojedynczy wiersz w tabeli.
 - ```Kolumna``` - to element zawierający dane jednego określonego typu,
 - ```Kwerenda``` - to zapytanie umożliwiające wyświetlanie pól i rekordów z tabel według ustalonego przez użytkownika kryterium,
 - ```Formularz``` -  to obiekt, który upraszcza proces wprowadzania i aktualizacji danych,
 - ``` Sortowanie``` - to porządkowanie rekordów w określonym porządku,
-- ```Relacje``` - to zależności między tabelami umożliwiające ich logiczne powiązanie ze
-sobą,
+- ```Relacje``` - to zależności między tabelami umożliwiające ich logiczne powiązanie ze sobą,
 - ```Klucz główny``` - słowo kluczowe służące do wymuszenia wpisywania do kolumny z tym ograniczeniem wartości unikalnych i niepustych,
 - ```Klucz obcy``` - słowo kluczowe służące do wymuszenia wpisywania do kolumny z tym ograniczeniem wartości występujących w kolumnie referencyjnej.
 
@@ -72,7 +71,7 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 
 - ```Jeden do Jednego``` - relacja polegająca na tym, że jednemu rekordowi pierwszej tabeli jest przyporządkowany dokładnie jeden rekord drugiej tabeli, a jednemu rekordowi drugiej tabeli jest przyporządkowany dokładnie jeden rekord pierwszej tabeli,
 - ```Jeden do Wielu``` - relacja polegająca na tym, że jednemu rekordowi pierwszej tabeli jest przyporządkowanych wiele rekordów drugiej tabeli, a jednemu rekordowi drugiej tabeli jest przyporządkowany dokładnie jeden rekord pierwszej tabeli,
-- ```Wiele do Wielu``` - relacja polegająca na tym, że jednemu rekordowi pierwszej tabeli jest przyporządkowanych wiele rekordów drugiej tabeli, a jednemu rekordowi drugiej tabeli jest przyporządkowanych wiele rekordów pierwszej tabeli,
+- ```Wiele do Wielu``` - relacja polegająca na tym, że jednemu rekordowi pierwszej tabeli jest przyporządkowanych wiele rekordów drugiej tabeli, a jednemu rekordowi drugiej tabeli jest przyporządkowanych wiele rekordów pierwszej tabeli.
 
 Źródło:
 ```
@@ -107,7 +106,7 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 - ```ORDER BY``` - komenda służąca do sortowania wyników według wybranych kolumn,
 - ```WHERE``` - komenda służąca do ograniczenia ilości wyszukiwanych rekordów,
 - ```Alias``` - nadana przez nas nazwa wybranych kolumn,
-- ```*``` - znak oznaczający wszystkie kolumny w tabeli,
+- ```*``` - znak oznaczający wszystkie kolumny w tabeli.
 
 ### Wartości puste
 
@@ -155,18 +154,18 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 
 - ```UNION``` - komenda służąca do umożliwiania łączenia dwóch lub więcej instrukcji ```SELECT``` z jednoczesnym sumowaniem ich wyników,
 - ```UNION ALL``` - komenda działająca jak ```UNION``` z tą różnicą, że bez sortowania wierszy i eliminiowania powtarzających się wyników,
-- ```INTERSECT``` - komenda służąca do zwracania wierszy które występują w obu zapytaniach ```SELECT```
-- ```MINUS``` - komenda służąca do zwracania wierszy które występują w pierwszym zapytaniu, a nie występują w drugim,
+- ```INTERSECT``` - komenda służąca do zwracania wierszy które występują w obu zapytaniach ```SELECT```,
+- ```MINUS``` - komenda służąca do zwracania wierszy które występują w pierwszym zapytaniu, a nie występują w drugim.
 
 ### Złączenia tabel
 
 - ```CONNECT BY PRIOR``` - komenda służąca do określenia w jaki sposób baza ma budować kolejne poziomy,
 - ```START WITH``` - komenda służąca do określenia z którego miejsca zaczynamy budowanie poziomów,
-- ```LEVEL``` - komenda służąca do podania poziomu na którym się znajdujemy,
+- ```LEVEL``` - komenda służąca do podania poziomu na którym się znajdujemy.
 
 ### Podzapytania
 
-- ```Podzapytanie``` - zapytanie z podzapytaniem działa w taki sposób, że pierwszy wyznaczony jest wynik podzapytania i jest zapamiętywany w buforze tymczasowym. Następnie warunek w głównym zapytaniu jest sprawdzany z wynikiem podzapytania. Jeżeli wynik jest dodatni - dane zostają zaliczone do wyniku ostatecznego
+- ```Podzapytanie``` - zapytanie z podzapytaniem działa w taki sposób, że pierwszy wyznaczony jest wynik podzapytania i jest zapamiętywany w buforze tymczasowym. Następnie warunek w głównym zapytaniu jest sprawdzany z wynikiem podzapytania. Jeżeli wynik jest dodatni - dane zostają zaliczone do wyniku ostatecznego.
 
 ### Modyfikacja baz danych
 
@@ -177,7 +176,7 @@ http://www.zstio-elektronika.pl/pliki_t_progr/Podstawowe_pojecia_baz_danych.pdf
 - ```UPDATE``` - komenda służąca do modyfikacji rekordów,
 - ```DELETE``` - komenda służąca do usuwania wierszy,
 - ```DROP TABLE [name]``` - komenda służąca do usunięcia tabeli,
-- ```DROP TABLE [name] CASCADE``` - komenda służąca do usunięcia tabeli kaskadowo - usuwanie tabeli i powiązanych z nimi rekordów (np. ```kluczy obcych```),
+- ```DROP TABLE [name] CASCADE``` - komenda służąca do usunięcia tabeli kaskadowo - usuwanie tabeli i powiązanych z nimi rekordów (np. ```kluczy obcych```).
 
 ### Ograniczenia integralnościowe (constraints)
 
