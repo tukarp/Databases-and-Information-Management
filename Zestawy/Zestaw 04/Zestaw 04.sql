@@ -1,20 +1,21 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 04 - Złączenia tabel
 -- Złączenia równościowe
 -- Zadanie 1
 SELECT
-    emp.first_name "Imie",
-    emp.last_name  "Nazwisko",
-    emp.dept_id    "NR",
-    dept.name      "Nazwa"
+    emp.first_name 'Imie',
+    emp.last_name  'Nazwisko',
+    emp.dept_id    'Nr',
+    dept.name      'Nazwa'
 FROM
     emp,
     dept;
 
 -- Zadanie 2
 SELECT
-    dept.id     "NR",
-    region.id   "NR Regionu",
-    region.name "Nazwa Regionu"
+    dept.id     'Nr',
+    region.id   'Nr Regionu',
+    region.name 'Nazwa Regionu'
 FROM
     dept,
     region
@@ -23,10 +24,10 @@ WHERE
 
 -- Zadanie 3
 SELECT
-    emp.last_name  "Nazwisko",
-    emp.first_name "Imie",
-    dept.id        "Nr",
-    dept.name      "Nazwa"
+    emp.last_name  'Nazwisko',
+    emp.first_name 'Imie',
+    dept.id        'Nr',
+    dept.name      'Nazwa'
 FROM
     emp,
     dept
@@ -36,9 +37,9 @@ WHERE
 
 -- Zadanie 4
 SELECT
-    emp.last_name      "Nazwisko",
-    region.name        "Nazwa",
-    emp.commission_pct "Prowizja"
+    emp.last_name      'Nazwisko',
+    region.name        'Nazwa',
+    emp.commission_pct 'Prowizja'
 FROM
     emp,
     dept
@@ -48,11 +49,11 @@ WHERE
 
 -- Zadanie 5
 SELECT
-    customer.name                         "Nazwa klienta",
-    emp.last_name                         "Nazwisko",
-    TO_CHAR(ord.date_ordered, 'YY/MM/DD') "Data zamowienia",
-    item.quantity_shipped                 "Liczba",
-    product.name                          "Nazwa produktu"
+    customer.name                         'Nazwa klienta',
+    emp.last_name                         'Nazwisko',
+    TO_CHAR(ord.date_ordered, 'YY/MM/DD') 'Data zamowienia',
+    item.quantity_shipped                 'Liczba',
+    product.name                          'Nazwa produktu'
 FROM
     customer,
     product,
@@ -69,9 +70,9 @@ WHERE
 -- Złączenia zewnętrzne
 -- Zadanie 6
 SELECT
-    NVL(emp.last_name, '-')   "Nazwisko",
-    NVL(TO_CHAR(emp.id), '-') "ID",
-    customer.name             "Nazwa Klienta"
+    NVL(emp.last_name, '-')   'Nazwisko',
+    NVL(TO_CHAR(emp.id), '-') 'ID',
+    customer.name             'Nazwa Klienta'
 FROM
     emp,
     customer
@@ -80,9 +81,9 @@ WHERE
 
 -- Zadanie 7
 SELECT
-    customer.id               "Nr Klienta",
-    customer.name             "Nazwa Klienta",
-    NVL(TO_CHAR(ord.id), '-') "Nr Zamowienia"
+    customer.id               'Nr Klienta',
+    customer.name             'Nazwa Klienta',
+    NVL(TO_CHAR(ord.id), '-') 'Nr Zamowienia'
 FROM
     customer,
     ord
@@ -94,7 +95,7 @@ ORDER BY
 -- Złączenia zwrotne
 -- Zadanie 8
 SELECT
-    (e1.last_name || ' pracuje dla ' || e2.last_name) "Kto dla kogo"
+    (e1.last_name || ' pracuje dla ' || e2.last_name) 'Kto dla kogo'
 FROM
     emp e1,
     emp e2
@@ -105,11 +106,11 @@ WHERE
 -- Złączenia drzewiaste
 -- Zadanie 9
 SELECT
-    e1.first_name                    "Imie",
-    e1.last_name                     "Nazwisko",
-    e1.title                         "Stanowisko",
-    NVL(TO_CHAR(e1.manager_id), ' ') "Zwierzchnik",
-    level - 0                        "Poziom"
+    e1.first_name                    'Imie',
+    e1.last_name                     'Nazwisko',
+    e1.title                         'Stanowisko',
+    NVL(TO_CHAR(e1.manager_id), ' ') 'Zwierzchnik',
+    level - 0                        'Poziom'
 FROM
     emp e1
 CONNECT BY
@@ -121,11 +122,11 @@ ORDER BY
 
 -- Zadanie 10
 SELECT
-    first_name                    "Imie",
-    last_name                     "Nazwisko",
-    title                         "Stanowisko",
-    NVL(TO_CHAR(manager_id), ' ') "Zwierzchnik",
-    level - 0                     "Poziom"
+    first_name                    'Imie',
+    last_name                     'Nazwisko',
+    title                         'Stanowisko',
+    NVL(TO_CHAR(manager_id), ' ') 'Zwierzchnik',
+    level - 0                     'Poziom'
 FROM
     emp 
 CONNECT BY

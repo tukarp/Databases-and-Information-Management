@@ -23,9 +23,9 @@ Napisz skrypt który wyświetli wszystkie identyfikatory departamentów, nazwisk
 
 ```
 SELECT
-    dept_id    "ID Departamentu",
-    last_name  "Nazwisko",
-    manager_id "ID Menadzera"
+    dept_id    'ID Departamentu',
+    last_name  'Nazwisko',
+    manager_id 'ID Menadzera'
 FROM
     emp
 ```
@@ -38,8 +38,8 @@ Napisz skrypt który wyświetli roczne dochody wszystkich pracowników wraz z ic
 
 ```
 SELECT
-    (salary * 12) "Roczne Dochody",
-    last_name     "Nazwisko"
+    (salary * 12) 'Roczne Dochody',
+    last_name     'Nazwisko'
 FROM
     emp
 ```
@@ -52,10 +52,10 @@ Napisz skrypt który wyświetli dane osobowe pracowników, zarobki miesięczne, 
 
 ```
 SELECT
-    first_name "Imie",
-    last_name  "Nazwisko",
-    salary     "Zarobki miesieczne",
-    ((salary * 12) + 1000) "Zarobki Roczne z Premia"
+    first_name 'Imie',
+    last_name  'Nazwisko',
+    salary     'Zarobki miesieczne',
+    ((salary * 12) + 1000) 'Zarobki Roczne z Premia'
 FROM
     emp
 ```
@@ -68,37 +68,37 @@ Napisz skrypt który wyświetli dane osobowe pracowników, zarobki miesięczne, 
 
 ```
 SELECT
-    first_name      "Imie",
-    last_name       "Nazwisko",
-    (salary * 1.08) "Zarobki Miesieczne",
-    ((salary * 1.08) * 12) "Zarobki Roczne"
+    first_name      'Imie',
+    last_name       'Nazwisko',
+    (salary * 1.08) 'Zarobki Miesieczne',
+    ((salary * 1.08) * 12) 'Zarobki Roczne'
 FROM
     emp
 ```
 
 ### Zadanie 6
 
-Napisz skrypt który wyświetli nazwisko oraz roczny dochód wraz z dodatkiem ```5%``` miesięcznych zarobków – taką kolumnę nazwij ```ROCZNY DOCHÓD``` (alias).
+Napisz skrypt który wyświetli nazwisko oraz roczny dochód wraz z dodatkiem ```5%``` miesięcznych zarobków – taką kolumnę nazwij ```Roczny dochód``` (alias).
 
 ### Rozwiązanie
 
 ```
 SELECT
-    last_name "Nazwisko",
-    ((salary * 12) + (salary * 0.05)) "Roczny Dochod"
+    last_name 'Nazwisko',
+    ((salary * 12) + (salary * 0.05)) 'Roczny Dochod'
 FROM
     emp
 ```
 
 ### Zadanie 7
 
-Napisz skrypt który wyświetli skonkatenowane imię i nazwisko (rozdzielone spacjami) poszczególnych pracowników (w jednej kolumnie). Kolumnę nazwij ```Imię i nazwisko```.
+Napisz skrypt który wyświetli skonkatenowane imię i nazwisko (rozdzielone spacjami) poszczególnych pracowników (w jednej kolumnie). Kolumnę nazwij ```Imię i Nazwisko```.
 
 ### Rozwiązanie
 
 ```
 SELECT
-    ((first_name || ' '||last_name)) "Imie i nazwisko"
+    ((first_name || ' '||last_name)) 'Imie i Nazwisko'
 FROM
     emp
 ```
@@ -111,7 +111,7 @@ Napisz skrypt który wyświetli dane osobowe pracowników oraz ich stanowiska (w
 
 ```
 SELECT
-    ((first_name || ' '||last_name || ' - ' || title)) "Super Pracownicy"
+    ((first_name || ' '||last_name || ' - ' || title)) 'Super Pracownicy'
 FROM
     emp
 ```
@@ -124,10 +124,10 @@ Napisz skrypt który wyświetli nazwiska pracowników, pensję, stanowiska i ich
 
 ```
 SELECT
-    last_name "Nazwisko",
-    salary    "Pensja",
-    title     "Stanowisko",
-    (salary * commission_pct / 100) "Prowizja"
+    last_name 'Nazwisko',
+    salary    'Pensja',
+    title     'Stanowisko',
+    (salary * commission_pct / 100) 'Prowizja'
 FROM
     emp
 ```
@@ -140,10 +140,10 @@ Napisz skrypt który zmodyfikuję poprzednie zapytanie tak, aby zamiast (```null
 
 ```
 SELECT
-    last_name "Nazwisko",
-    salary    "Pensja",
-    title     "Stanowisko",
-    NVL(salary * commission_pct / 100, 0) "Prowizja"
+    last_name 'Nazwisko',
+    salary    'Pensja',
+    title     'Stanowisko',
+    NVL(salary * commission_pct / 100, 0) 'Prowizja'
 FROM
     emp
 ```
@@ -156,7 +156,7 @@ Napisz skrypt który Wyświetli nazwy działów z tabeli ```dept```. Zmodyfikuj 
 
 ```
 SELECT
-    DISTINCT name "Nazwy"
+    DISTINCT name 'Nazwy'
 FROM
     dept
 ```
@@ -169,9 +169,9 @@ Napisz skrypt który dla każdego pracownika wyświetli nazwisko, numer departam
 
 ```
 SELECT
-    last_name  "Nazwisko",
-    dept_id    "ID Departamentu",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    dept_id    'ID Departamentu',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 ORDER BY
@@ -187,9 +187,9 @@ Napisz skrypt który wyświetli nazwiska pracowników, numery działów oraz dat
 
 ```
 SELECT
-    last_name  "Nazwisko",
-    dept_id    "ID Depatramentu",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    dept_id    'ID Depatramentu',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 ORDER BY
@@ -204,9 +204,9 @@ Napisz skrypt który wyświetli dane osobowe oraz stanowisko pracowników o nazw
 
 ```
 SELECT
-    first_name "Imie",
-    last_name  "Nazwisko",
-    title      "Stanowisko"
+    first_name 'Imie',
+    last_name  'Nazwisko',
+    title      'Stanowisko'
 FROM
     emp
 WHERE
@@ -221,8 +221,8 @@ Napisz skrypt który wyświetli nazwisko oraz datę zatrudnienia tych pracownik�
 
 ```
 SELECT
-    last_name  "Nazwisko",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -238,9 +238,9 @@ Napisz skrypt który wyświetli identyfikatory departamentów, nazwy oraz identy
 
 ```
 SELECT
-    id        "ID",
-    name      "Nazwa",
-    region_id "ID Regionu"
+    id        'ID',
+    name      'Nazwa',
+    region_id 'ID Regionu'
 FROM
     dept
 WHERE
@@ -256,7 +256,7 @@ Napisz skrypt który wyświetlić dane wszystkich pracowników, których nazwisk
 
 ```
 SELECT
-    * "Nazwiska Na Litere `M`"
+    * 'Nazwiska Na Litere `M`'
 FROM
     emp
 WHERE
@@ -271,7 +271,7 @@ Napisz skrypt który wyświetli wszystkie dane osobowe pracowników, których na
 
 ```
 SELECT
-    * "Nazwiska Bez `A`"
+    * 'Nazwiska Bez `A`'
 FROM
     emp
 WHERE
@@ -287,8 +287,8 @@ pracę w ```1991 roku```.
 
 ```
 SELECT
-    last_name  "Nazwisko",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -303,7 +303,7 @@ Napisz skrypt który wyświetli nazwiska pracowników, których drugą literą n
 
 ```
 SELECT
-    last_name "Nazwiska"
+    last_name 'Nazwiska'
 FROM
     emp
 WHERE
@@ -318,7 +318,7 @@ Napisz skrypt który wyświetlić nazwy firm z tabeli ```customer```, które zaw
 
 ```
 SELECT
-    name "Nazwy Firm"
+    name 'Nazwy Firm'
 FROM
     customer
 WHERE

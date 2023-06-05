@@ -13,11 +13,11 @@ zarobków oraz liczbę pracowników.
 
 ```
 SELECT 
-    MAX(salary)       "Maksymalna",
-    MIN(salary)       "Minimalna",
-    AVG(salary)       "Srednia",
-    SUM(salary)       "Suma",
-    COUNT(first_name) "Liczba Pracownikow"
+    MAX(salary)       'Maksymalna',
+    MIN(salary)       'Minimalna',
+    AVG(salary)       'Srednia',
+    SUM(salary)       'Suma',
+    COUNT(first_name) 'Liczba Pracownikow'
 FROM 
     emp;
 ```
@@ -30,8 +30,8 @@ Napisz skrypt który wyświetli nazwiska tych pracowników, którzy według list
 
 ```
 SELECT 
-    MIN(last_name) "Pierwsze Nazwisko", 
-    MAX(last_name) "Ostatnie Nazwisko" 
+    MIN(last_name) 'Pierwsze Nazwisko', 
+    MAX(last_name) 'Ostatnie Nazwisko' 
 FROM 
     emp;
 ```
@@ -44,7 +44,7 @@ Napisz skrypt który wyświetli liczbę pracowników z działu 31, którzy otrzy
 
 ```
 SELECT 
-    COUNT(first_name) "Liczba Pracownikow" 
+    COUNT(first_name) 'Liczba Pracownikow' 
 FROM 
     emp 
 WHERE 
@@ -62,8 +62,8 @@ Napisz skrypt który wyświetli kategorię zdolności kredytowej oraz odpowiadaj
 
 ```
 SELECT 
-    credit_rating        "Zdolnosc Kredytowa",
-    COUNT(credit_rating) "Liczba Klientow"
+    credit_rating        'Zdolnosc Kredytowa',
+    COUNT(credit_rating) 'Liczba Klientow'
 FROM
     customer
 GROUP BY
@@ -78,8 +78,8 @@ Napisz skrypt który wyświetlić stanowiska (pominąwszy vice dyrektorów) oraz
 
 ```
 SELECT 
-    title       "Stanowisko",
-    SUM(salary) "Zarobki"
+    title       'Stanowisko',
+    SUM(salary) 'Zarobki'
 FROM
     emp
 WHERE
@@ -98,8 +98,8 @@ Napisz skrypt który wyświetli maksymalne zarobki dla każdej grupy stanowisk.
 
 ```
 SELECT 
-    title       "Stanowisko",
-    MAX(salary) "Maksymalne Zarobki"
+    title       'Stanowisko',
+    MAX(salary) 'Maksymalne Zarobki'
 FROM 
     emp
 GROUP BY
@@ -114,8 +114,8 @@ Napisz skrypt który wyświetli numery departamentów, w których średnie wynag
 
 ```
 SELECT
-    dept_id     "Numer Oddzialu",
-    AVG(salary) "Srednie Zarobki"
+    dept_id     'Numer Oddzialu',
+    AVG(salary) 'Srednie Zarobki'
 FROM
     emp
 HAVING
@@ -132,7 +132,7 @@ Napisz skrypt który wyświetli powtarzające się nazwiska pracowników.
 
 ```
 SELECT
-    last_name "Nazwisko"
+    last_name 'Nazwisko'
 FROM
     emp
 HAVING 
@@ -151,16 +151,16 @@ Napisz skrypt który z tabeli departamentów wybierze identyfikator regionu oraz
 
 ```
 SELECT 
-    region_id "ID Regionu",
-    name      "Nazwa"
+    region_id 'ID Regionu',
+    name      'Nazwa'
 FROM
     dept
 
 UNION
 
 SELECT 
-    id   "ID Regionu",
-    name "Nazwa"
+    id   'ID Regionu',
+    name 'Nazwa'
 FROM
     region
 ORDER BY
@@ -175,14 +175,14 @@ Napisz skrypt który zmodyfikuję powyższe zapytanie tak, aby wyświetlić tylk
 
 ```
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     dept
 
 UNION
 
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region
 GROUP BY
@@ -197,14 +197,14 @@ Napisz skrypt który zmodyfikuję powyższe zapytanie tak, aby wyświetlić rów
 
 ```
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     dept
 
 UNION ALL
 
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region;
 ```
@@ -217,8 +217,8 @@ Napisz skrypt który wyświetli identyfikator departamentu oraz nazwisko pracown
 
 ```
 SELECT
-    dept_id   "NR DEP / REG",
-    last_name "Naziwsko / Nazwa"
+    dept_id   'Nr Departamentu / Region',
+    last_name 'Naziwsko / Nazwa'
 FROM 
     emp
 
@@ -226,7 +226,7 @@ UNION
 
 SELECT
     id,
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region
 ORDER BY
@@ -242,14 +242,14 @@ Napisz skrypt który wyświetli z tabeli ```customer``` identyfikatory klientów
 
 ```
 SELECT
-    id "ID Klienta"
+    id 'ID Klienta'
 FROM
     customer
 
 INTERSECT
 
 SELECT
-    customer_id "ID Klienta"
+    customer_id 'ID Klienta'
 FROM
     ord;
 ```
@@ -262,14 +262,14 @@ Napisz skrypt który wyświetli identyfikatory klientów, którzy nie złożyli 
 
 ```
 SELECT
-    id "ID Klienta"
+    id 'ID Klienta'
 FROM
     customer
 
 MINUS
 
 SELECT
-    customer_id "ID Klienta"
+    customer_id 'ID Klienta'
 FROM
     ord;
 ```

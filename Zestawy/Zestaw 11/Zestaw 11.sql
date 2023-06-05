@@ -1,3 +1,4 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 11 - Wstęp do języka PL/SQL
 SET SERVEROUTPUT ON;
 

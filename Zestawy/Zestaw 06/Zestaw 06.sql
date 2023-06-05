@@ -1,9 +1,10 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 06 - Zapytania SQL
 -- Zadanie 1
 SELECT
-    emp.first_name "Imie",
-    emp.last_name  "Nazwisko",
-    emp.salary     "Pensja"
+    emp.first_name 'Imie',
+    emp.last_name  'Nazwisko',
+    emp.salary     'Pensja'
 FROM
     emp
 WHERE
@@ -13,16 +14,16 @@ ORDER BY
 
 -- Zadanie 2
 SELECT
-    date_ordered "Data Zamowienia",
-    date_shipped "Data Wysylki",
-    total        "Laczne Wartosci"
+    date_ordered 'Data Zamowienia',
+    date_shipped 'Data Wysylki',
+    total        'Laczne Wartosci'
 FROM
     ord;
 
 -- Zadanie 3
 SELECT
-    emp.last_name  "Nazwisko",
-    emp.first_name "Imie"
+    emp.last_name  'Nazwisko',
+    emp.first_name 'Imie'
 FROM
     emp
 WHERE
@@ -37,7 +38,7 @@ WHERE
 
 -- Zadanie 4
 SELECT
-    COUNT(emp.last_name) "Ilosc Pracownikow"
+    COUNT(emp.last_name) 'Ilosc Pracownikow'
 FROM
     emp
 WHERE
@@ -49,9 +50,9 @@ WHERE
 
 -- Zadanie 5
 SELECT
-    emp.last_name  "Imie",
-    emp.first_name "Nazwisko",
-    emp.start_date "Data Zatrudnienia"
+    emp.last_name  'Imie',
+    emp.first_name 'Nazwisko',
+    emp.start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -61,8 +62,8 @@ ORDER BY
 
 -- Zadanie 6
 SELECT
-    ord.sales_rep_id "Przedstawiciel Handlowy",
-    SUM(total)       "Suma Kwot Zamowien"
+    ord.sales_rep_id 'Przedstawiciel Handlowy',
+    SUM(total)       'Suma Kwot Zamowien'
 FROM
     emp, ord
 WHERE
@@ -72,8 +73,8 @@ GROUP BY
 
 -- Zadanie 7
 SELECT
-    MAX(ord.sales_rep_id) "Przedstawiciel Handlowy",
-    MAX(SUM(total))       "Suma Kwot Zamowien"
+    MAX(ord.sales_rep_id) 'Przedstawiciel Handlowy',
+    MAX(SUM(total))       'Suma Kwot Zamowien'
 FROM
     emp, ord
 WHERE
@@ -83,7 +84,7 @@ GROUP BY
 
 -- Zadanie 8
 SELECT
-    last_name "Nazwisko"
+    last_name 'Nazwisko'
 FROM
     (SELECT
         last_name,
@@ -99,8 +100,8 @@ WHERE
 
 -- Zadanie 9
 SELECT
-    emp.start_date    "Data Rozpoczecie",
-    COUNT(start_date) "Liczba Osob Zatrudnionych"
+    emp.start_date    'Data Rozpoczecie',
+    COUNT(start_date) 'Liczba Osob Zatrudnionych'
 FROM
     emp
 GROUP BY
@@ -108,9 +109,9 @@ GROUP BY
 
 -- Zadanie 10
 SELECT
-    inventory.product_id               "Produkt",
-    product.name                       "Nazwa Produktu",
-    inventory.out_of_stock_explanation "Wytlumaczenie Braku"
+    inventory.product_id               'Produkt',
+    product.name                       'Nazwa Produktu',
+    inventory.out_of_stock_explanation 'Wytlumaczenie Braku'
 FROM
     inventory, product
 WHERE
@@ -120,7 +121,7 @@ WHERE
 
 -- Zadanie 11
 SELECT
-    product.name "Nazwa Produktu"
+    product.name 'Nazwa Produktu'
 FROM
     inventory, product
 WHERE
@@ -133,7 +134,7 @@ HAVING
 
 -- Zadanie 12
 SELECT
-    name "Nazwa Produktu"
+    name 'Nazwa Produktu'
 FROM
     product
 WHERE

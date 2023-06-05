@@ -1,3 +1,4 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 12 - PL/SQL – procedury, funkcje, pakiety
 -- Zadanie 1
 PROCEDURE add_emp (

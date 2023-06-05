@@ -10,8 +10,8 @@ Napisz skrypt który określi numer zamówienia o maksymalnej łącznej wartośc
 
 ```
 SELECT
-    id    "ID",
-    total "Wartosc"
+    id    'ID',
+    total 'Wartosc'
 FROM
     ord
 WHERE
@@ -61,8 +61,8 @@ Napisz skrypt który wyświetli nazwy produktów, których sugerowana cena jest 
 
 ```
 SELECT
-    name                  "Nazwa Produktu",
-    suggested_whlsl_price "Sugerowana Cena"
+    name                  'Nazwa Produktu',
+    suggested_whlsl_price 'Sugerowana Cena'
 FROM
     product
 WHERE
@@ -82,9 +82,9 @@ Napisz skrypt który określi, których towarów jest najwięcej w poszczególny
 
 ```
 SELECT
-    warehouse_id    "ID Magazynu",
-    product_id      "ID Produktu",
-    amount_in_stock "Ilosc Produktu w Magazynie"
+    warehouse_id    'ID Magazynu',
+    product_id      'ID Produktu',
+    amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     inventory
 WHERE
@@ -107,9 +107,9 @@ Napisz skrypt który wykona powyższe zadanie korzystając z ```podzapytań skor
 
 ```
 SELECT
-    warehouse_id    "ID Magazynu",
-    product_id      "ID Produktu",
-    amount_in_stock "Ilosc Produktu w Magazynie"
+    warehouse_id    'ID Magazynu',
+    product_id      'ID Produktu',
+    amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     inventory I1
 WHERE
@@ -129,9 +129,9 @@ Napisz skrypt który zmodyfikuję powyższe zapytanie tak, żeby w wynikach poda
 
 ```
 SELECT
-    W.city             "Miasto",
-    P.name             "Produkt",
-    I1.amount_in_stock "Ilosc Produktu w Magazynie"
+    W.city             'Miasto',
+    P.name             'Produkt',
+    I1.amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     product   P,
     warehouse W,
@@ -155,7 +155,7 @@ Napisz skrypt który wyświetli nazwy klientów (tabela ```customer```), którzy
 
 ```
 SELECT
-    name "Imie"
+    name 'Imie'
 FROM
     customer
 WHERE
@@ -175,9 +175,9 @@ Napisz skrypt który zmodyfikuj powyższe zapytanie (zachowując podzapytanie) w
 
 ```
 SELECT
-    customer.id   "ID Klienta",
-    customer.name "Nazwa Klienta",
-    ord.id        "ID Zamowienia"
+    customer.id   'ID Klienta',
+    customer.name 'Nazwa Klienta',
+    ord.id        'ID Zamowienia'
 FROM
     customer, ord
 WHERE
@@ -201,8 +201,8 @@ Napisz skrypt który sprawdzi powyższy wynik za pomocą pojedynczego zapytania 
 
 ```
 SELECT
-    customer_id "ID Klienta",
-    id          "ID Zamowienia"
+    customer_id 'ID Klienta',
+    id          'ID Zamowienia'
 FROM
     ord
 ORDER BY
@@ -217,7 +217,7 @@ Napisz skrypt który poda nazwiska pracowników, którzy obsługiwali zamówieni
 
 ```
 SELECT
-    emp.last_name "Nazwisko Klienta"
+    emp.last_name 'Nazwisko Klienta'
 FROM
     emp
 WHERE
@@ -238,7 +238,7 @@ Napisz skrypt który wykona powyższe zadanie bez podzapytania.
 
 ```
 SELECT
-    emp.last_name "Nazwisko Klienta"
+    emp.last_name 'Nazwisko Klienta'
 FROM
     emp, ord
 WHERE
@@ -254,7 +254,7 @@ Napisz skrypt który poda imiona i nazwiska pracowników, którzy obsłużyli co
 
 ```
 SELECT
-    first_name || ' ' || last_name "Imie i nazwisko"
+    first_name || ' ' || last_name 'Imie i nazwisko'
 FROM
     emp
 WHERE

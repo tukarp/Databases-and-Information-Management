@@ -1,11 +1,12 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 02 - Funkcje Oracle
 -- Funkcje znakowe
 -- Zadanie 1
 SELECT
-    LOWER(first_name) "Imie",
-    LOWER(last_name)  "Nazwisko",
-    INITCAP(userid)   "Identyfikator",
-    UPPER(title)      "Stanowisko"
+    LOWER(first_name) 'Imie',
+    LOWER(last_name)  'Nazwisko',
+    INITCAP(userid)   'Identyfikator',
+    UPPER(title)      'Stanowisko'
 FROM
     emp
 WHERE
@@ -13,8 +14,8 @@ WHERE
 
 -- Zadanie 2
 SELECT
-    first_name "Imie",
-    last_name  "Nazwisko"
+    first_name 'Imie',
+    last_name  'Nazwisko'
 FROM
     emp
 WHERE
@@ -22,7 +23,7 @@ WHERE
 
 -- Zadanie 3
 SELECT
-    ((name || ' - ' || country )) "Nazwa i Panstwo"
+    ((name || ' - ' || country )) 'Nazwa i Panstwo'
 FROM
     customer
 WHERE
@@ -30,8 +31,8 @@ WHERE
 
 -- Zadanie 4
 SELECT
-    name         "Nazwa",
-    LENGTH(name) "Liczba Znakow"
+    name         'Nazwa',
+    LENGTH(name) 'Liczba Znakow'
 FROM
     product
 WHERE
@@ -40,24 +41,24 @@ WHERE
 -- Funkcje liczbowe
 -- Zadanie 5
 SELECT 
-    ROUND(41.5843, 2)  "Setne",
-    ROUND(41.5843, 0)  "Calkowite",
-    ROUND(41.5843, -1) "Dziesiatki"
+    ROUND(41.5843, 2)  'Setne',
+    ROUND(41.5843, 0)  'Calkowite',
+    ROUND(41.5843, -1) 'Dziesiatki'
 FROM
     dual;
 
 -- Zadanie 6
 SELECT
-    ROUND(41.5843, 2)  "Setne",
-    FLOOR(41.5843)     "Calkowite",
-    ROUND(41.5843, -1) "Dziesiatki"
+    ROUND(41.5843, 2)  'Setne',
+    FLOOR(41.5843)     'Calkowite',
+    ROUND(41.5843, -1) 'Dziesiatki'
 FROM
     dual;
 
 -- Zadanie 7
 SELECT
-    last_name                   "Nazwisko",
-    MOD(salary, commission_pct) "Reszta"
+    last_name                   'Nazwisko',
+    MOD(salary, commission_pct) 'Reszta'
 FROM
     emp
 WHERE
@@ -65,8 +66,8 @@ WHERE
 
 -- Zadanie 7a
 SELECT
-    last_name "Nazwisko",
-    MOD(salary, commission_pct) "Reszta"
+    last_name 'Nazwisko',
+    MOD(salary, commission_pct) 'Reszta'
 FROM
     emp
 WHERE
@@ -76,14 +77,14 @@ WHERE
 -- Operacje na datach
 -- Zadanie 8
 SELECT
-    sysdate "Aktualna Data"
+    sysdate 'Aktualna Data'
 FROM
     dual
 
 -- Zadanie 9
 SELECT
-    last_name "Nazwisko",
-    ROUND((TRUNC((sysdate - start_date), 0)/7),0) "Liczba Tygodni W Firmie"
+    last_name 'Nazwisko',
+    ROUND((TRUNC((sysdate - start_date), 0)/7),0) 'Liczba Tygodni W Firmie'
 FROM
     emp
 WHERE
@@ -91,9 +92,9 @@ WHERE
 
 -- Zadanie 10
 SELECT
-    id "ID", 
-    TRUNC((months_between(sysdate, start_date)), 0) "Liczba Miesiecy",
-    add_months(start_date, 3) "Po Stazu"
+    id 'ID', 
+    TRUNC((months_between(sysdate, start_date)), 0) 'Liczba Miesiecy',
+    add_months(start_date, 3) 'Po Stazu'
 FROM
     emp
 WHERE
@@ -101,10 +102,10 @@ WHERE
 
 -- Zadanie 11
 SELECT
-    product_id                "Produkt",
-    restock_date              "Dostawa",
-    next_day(restock_date, 5) "Piatek Po Dostawie",
-    last_day(restock_date)    "Ostatni Dzien Miesiaca"
+    product_id                'Produkt',
+    restock_date              'Dostawa',
+    next_day(restock_date, 5) 'Piatek Po Dostawie',
+    last_day(restock_date)    'Ostatni Dzien Miesiaca'
 FROM
     inventory
 WHERE
@@ -114,9 +115,9 @@ ORDER BY
 
 -- Zadanie 12
 SELECT
-    id "ID",
-    start_date "Data",
-    extract(month from start_date) "Miesiac"
+    id 'ID',
+    start_date 'Data',
+    extract(month from start_date) 'Miesiac'
 FROM
     emp
 WHERE
@@ -125,8 +126,8 @@ WHERE
 -- Funkcje konwersji
 -- Zadanie 13
 SELECT
-    id "ID",
-    TO_CHAR(date_ordered, 'mm/rr') "MM/RR"
+    id 'ID',
+    TO_CHAR(date_ordered, 'mm/rr') 'MM/RR'
 FROM
     ord
 WHERE
@@ -134,8 +135,8 @@ WHERE
 
 -- Zadanie 14
 SELECT
-    last_name "Nazwisko",
-    TO_CHAR(start_date, 'dd Month YYYY') "Data"
+    last_name 'Nazwisko',
+    TO_CHAR(start_date, 'dd Month YYYY') 'Data'
 FROM
     emp
 WHERE

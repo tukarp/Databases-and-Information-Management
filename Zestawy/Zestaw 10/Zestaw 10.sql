@@ -1,3 +1,4 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 10 - Implementacja przykładowej bazy danych
 -- Przygotowanie bazy danych
 -- Zadanie 1
@@ -137,7 +138,7 @@ ALTER TABLE npc_merchant
 
 -- Zadanie 3
 SELECT
-    table_name  "Nazwa Tabeli"
+    table_name  'Nazwa Tabeli'
 FROM
     user_tables;
 
@@ -148,8 +149,8 @@ DESCRIBE npc_merchant;
 
 -- Zadanie 5
 SELECT
-    column_name      "Nazwa Kolumny",
-    constraint_name  "Nazwa Ograniczenia"
+    column_name      'Nazwa Kolumny',
+    constraint_name  'Nazwa Ograniczenia'
 FROM
     User_cons_columns;
 

@@ -161,7 +161,7 @@ Napisz skrypt który wylistuję nazwy wszystkich tabel.
 
 ```
 SELECT
-    table_name  "Nazwa Tabeli"
+    table_name  'Nazwa Tabeli'
 FROM
     user_tables;
 ```
@@ -186,8 +186,8 @@ Napisz skrypt który wyświetli jakie ograniczenia są narzucone na poszczególn
 
 ```
 SELECT
-    column_name      "Nazwa Kolumny",
-    constraint_name  "Nazwa Ograniczenia"
+    column_name      'Nazwa Kolumny',
+    constraint_name  'Nazwa Ograniczenia'
 FROM
     User_cons_columns;
 ```

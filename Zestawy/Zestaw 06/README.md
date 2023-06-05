@@ -10,9 +10,9 @@ Napisz skrypt który wyświetli listę pracowników, którzy zarabiają poniżej
 
 ```
 SELECT
-    emp.first_name "Imie",
-    emp.last_name  "Nazwisko",
-    emp.salary     "Pensja"
+    emp.first_name 'Imie',
+    emp.last_name  'Nazwisko',
+    emp.salary     'Pensja'
 FROM
     emp
 WHERE
@@ -29,9 +29,9 @@ Napisz skrypt który wyświetli w jednej kolumnie daty wszystkich zamówień i i
 
 ```
 SELECT
-    date_ordered "Data Zamowienia",
-    date_shipped "Data Wysylki",
-    total        "Laczne Wartosci"
+    date_ordered 'Data Zamowienia',
+    date_shipped 'Data Wysylki',
+    total        'Laczne Wartosci'
 FROM
     ord;
 ```
@@ -44,8 +44,8 @@ Napisz skrypt który poda imiona i nazwiska pracowników na stanowisku ```Stock 
 
 ```
 SELECT
-    emp.last_name  "Nazwisko",
-    emp.first_name "Imie"
+    emp.last_name  'Nazwisko',
+    emp.first_name 'Imie'
 FROM
     emp
 WHERE
@@ -67,7 +67,7 @@ Napisz skrypt który określi, ilu pracowników ma zarobki poniżej średniej po
 
 ```
 SELECT
-    COUNT(emp.last_name) "Ilosc Pracownikow"
+    COUNT(emp.last_name) 'Ilosc Pracownikow'
 FROM
     emp
 WHERE
@@ -86,9 +86,9 @@ Napisz skrypt który poda listę pracowników o stażu pracy ponad ```30``` lat,
 
 ```
 SELECT
-    emp.last_name  "Imie",
-    emp.first_name "Nazwisko",
-    emp.start_date "Data Zatrudnienia"
+    emp.last_name  'Imie',
+    emp.first_name 'Nazwisko',
+    emp.start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -105,8 +105,8 @@ Napisz skrypt który wyświetli numery przedstawicieli handlowych i sumy kwot ws
 
 ```
 SELECT
-    ord.sales_rep_id "Przedstawiciel Handlowy",
-    SUM(total)       "Suma Kwot Zamowien"
+    ord.sales_rep_id 'Przedstawiciel Handlowy',
+    SUM(total)       'Suma Kwot Zamowien'
 FROM
     emp, ord
 WHERE
@@ -123,8 +123,8 @@ Napisz skrypt który poda numer identyfikacyjny przedstawiciela handlowego, któ
 
 ```
 SELECT
-    MAX(ord.sales_rep_id) "Przedstawiciel Handlowy",
-    MAX(SUM(total))       "Suma Kwot Zamowien"
+    MAX(ord.sales_rep_id) 'Przedstawiciel Handlowy',
+    MAX(SUM(total))       'Suma Kwot Zamowien'
 FROM
     emp, ord
 WHERE
@@ -141,7 +141,7 @@ Napisz skrypt który określ nazwisko przedstawiciela handlowego z poprzedniego 
 
 ```
 SELECT
-    last_name "Nazwisko"
+    last_name 'Nazwisko'
 FROM
     (SELECT
         last_name,
@@ -164,8 +164,8 @@ Napisz skrypt który wypiszę chronologicznie daty przyjęć do pracy oraz liczb
 
 ```
 SELECT
-    emp.start_date    "Data Rozpoczecie",
-    COUNT(start_date) "Liczba Osob Zatrudnionych"
+    emp.start_date    'Data Rozpoczecie',
+    COUNT(start_date) 'Liczba Osob Zatrudnionych'
 FROM
     emp
 GROUP BY
@@ -180,9 +180,9 @@ Napisz skrypt który sprawdzi, których towarów brakuje na stanie inwentarza w 
 
 ```
 SELECT
-    inventory.product_id               "Produkt",
-    product.name                       "Nazwa Produktu",
-    inventory.out_of_stock_explanation "Wytlumaczenie Braku"
+    inventory.product_id               'Produkt',
+    product.name                       'Nazwa Produktu',
+    inventory.out_of_stock_explanation 'Wytlumaczenie Braku'
 FROM
     inventory, product
 WHERE
@@ -199,7 +199,7 @@ Napisz skrypt który określi nazwy produktów, których łączna liczba na stan
 
 ```
 SELECT
-    product.name "Nazwa Produktu"
+    product.name 'Nazwa Produktu'
 FROM
     inventory, product
 WHERE
@@ -219,7 +219,7 @@ Napisz skrypt który wyświetli nazwy towarów, które opisane są dokładnie ``
 
 ```
 SELECT
-    name "Nazwa Produktu"
+    name 'Nazwa Produktu'
 FROM
     product
 WHERE

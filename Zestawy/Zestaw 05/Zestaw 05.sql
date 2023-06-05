@@ -1,8 +1,9 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 05 - Podzapytania
 -- Zadanie 1
 SELECT
-    id    "ID",
-    total "Wartosc"
+    id    'ID',
+    total 'Wartosc'
 FROM
     ord
 WHERE
@@ -31,8 +32,8 @@ WHERE
 
 -- Zadanie 4
 SELECT
-    name                  "Nazwa Produktu",
-    suggested_whlsl_price "Sugerowana Cena"
+    name                  'Nazwa Produktu',
+    suggested_whlsl_price 'Sugerowana Cena'
 FROM
     product
 WHERE
@@ -45,9 +46,9 @@ WHERE
 
 -- Zadanie 5
 SELECT
-    warehouse_id    "ID Magazynu",
-    product_id      "ID Produktu",
-    amount_in_stock "Ilosc Produktu w Magazynie"
+    warehouse_id    'ID Magazynu',
+    product_id      'ID Produktu',
+    amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     inventory
 WHERE
@@ -63,9 +64,9 @@ IN
 
 -- Zadanie 6
 SELECT
-    warehouse_id    "ID Magazynu",
-    product_id      "ID Produktu",
-    amount_in_stock "Ilosc Produktu w Magazynie"
+    warehouse_id    'ID Magazynu',
+    product_id      'ID Produktu',
+    amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     inventory I1
 WHERE
@@ -78,9 +79,9 @@ WHERE
 
 -- Zadanie 7
 SELECT
-    W.city             "Miasto",
-    P.name             "Produkt",
-    I1.amount_in_stock "Ilosc Produktu w Magazynie"
+    W.city             'Miasto',
+    P.name             'Produkt',
+    I1.amount_in_stock 'Ilosc Produktu w Magazynie'
 FROM
     product   P,
     warehouse W,
@@ -97,7 +98,7 @@ AND P.id = I1.product_id;
 
 -- Zadanie 8
 SELECT
-    name "Imie"
+    name 'Imie'
 FROM
     customer
 WHERE
@@ -110,9 +111,9 @@ WHERE
 
 -- Zadanie 9
 SELECT
-    customer.id   "ID Klienta",
-    customer.name "Nazwa Klienta",
-    ord.id        "ID Zamowienia"
+    customer.id   'ID Klienta',
+    customer.name 'Nazwa Klienta',
+    ord.id        'ID Zamowienia'
 FROM
     customer, ord
 WHERE
@@ -129,8 +130,8 @@ ORDER BY
 
 -- Zadanie 10
 SELECT
-    customer_id "ID Klienta",
-    id          "ID Zamowienia"
+    customer_id 'ID Klienta',
+    id          'ID Zamowienia'
 FROM
     ord
 ORDER BY
@@ -138,7 +139,7 @@ ORDER BY
 
 -- Zadanie 11
 SELECT
-    emp.last_name "Nazwisko Klienta"
+    emp.last_name 'Nazwisko Klienta'
 FROM
     emp
 WHERE
@@ -152,7 +153,7 @@ WHERE
 
 -- Zadanie 12
 SELECT
-    emp.last_name "Nazwisko Klienta"
+    emp.last_name 'Nazwisko Klienta'
 FROM
     emp, ord
 WHERE
@@ -161,7 +162,7 @@ WHERE
 
 -- Zadanie 13
 SELECT
-    first_name || ' ' || last_name "Imie i nazwisko"
+    first_name || ' ' || last_name 'Imie i nazwisko'
 FROM
     emp
 WHERE

@@ -1,3 +1,4 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 01 - SQL - proste instrukcje wybierania danych
 -- Zadanie 1
 SELECT
@@ -7,85 +8,85 @@ FROM
 
 -- Zadanie 2
 SELECT
-    dept_id    "ID Departamentu",
-    last_name  "Nazwisko",
-    manager_id "ID Menadzera"
+    dept_id    'ID Departamentu',
+    last_name  'Nazwisko',
+    manager_id 'ID Menadzera'
 FROM
     emp
 
 -- Zadanie 3
 SELECT
-    (salary * 12) "Roczne Dochody",
-    last_name     "Nazwisko"
+    (salary * 12) 'Roczne Dochody',
+    last_name     'Nazwisko'
 FROM
     emp
 
 -- Zadanie 4
 SELECT
-    first_name "Imie",
-    last_name  "Nazwisko",
-    salary     "Zarobki miesieczne",
-    ((salary * 12) + 1000) "Zarobki Roczne z Premia"
+    first_name 'Imie',
+    last_name  'Nazwisko',
+    salary     'Zarobki miesieczne',
+    ((salary * 12) + 1000) 'Zarobki Roczne z Premia'
 FROM
     emp
 
 -- Zadanie 5
 SELECT
-    first_name      "Imie",
-    last_name       "Nazwisko",
-    (salary * 1.08) "Zarobki Miesieczne",
-    ((salary * 1.08) * 12) "Zarobki Roczne"
+    first_name      'Imie',
+    last_name       'Nazwisko',
+    (salary * 1.08) 'Zarobki Miesieczne',
+    ((salary * 1.08) * 12) 'Zarobki Roczne'
 FROM
     emp
 
 -- Zadanie 6
 SELECT
-    last_name "Nazwisko",
-    ((salary * 12) + (salary * 0.05)) "Roczny Dochod"
+    last_name 'Nazwisko',
+    ((salary * 12) + (salary * 0.05)) 'Roczny Dochod'
 FROM
     emp
 
 -- Zadanie 7
 SELECT
-    ((first_name || ' '||last_name)) "Imie i nazwisko"
+    ((first_name || ' '||last_name)) 'Imie i Nazwisko'
 FROM
     emp
 
 -- Zadanie 8
 SELECT
-    ((first_name || ' '||last_name || ' - ' || title)) "Super Pracownicy"
+    ((first_name || ' '||last_name || ' - ' || title)) 'Super Pracownicy'
 FROM
     emp
 
 -- Zadanie 9
 SELECT
-    last_name "Nazwisko",
-    salary    "Pensja",
-    title     "Stanowisko",
-    (salary * commission_pct / 100) "Prowizja"
+    last_name 'Nazwisko',
+    salary    'Pensja',
+    title     'Stanowisko',
+    (salary * commission_pct / 100) 'Prowizja'
 FROM
     emp
 
 -- Zadanie 10
 SELECT
-    last_name "Nazwisko",
-    salary    "Pensja",
-    title     "Stanowisko",
-    NVL(salary * commission_pct / 100, 0) "Prowizja"
+    last_name 'Nazwisko',
+    salary    'Pensja',
+    title     'Stanowisko',
+    NVL(salary * commission_pct / 100, 0) 'Prowizja'
 FROM
     emp
 
 -- Zadanie 11
 SELECT
-    DISTINCT name "Nazwy"
+    DISTINCT name 'Nazwy'
 FROM
     dept
 
 -- Zadanie 12
 SELECT
-    last_name  "Nazwisko",
-    dept_id    "ID Departamentu",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    dept_id    'ID Departamentu',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 ORDER BY
@@ -94,9 +95,9 @@ ORDER BY
 
 -- Zadanie 13
 SELECT
-    last_name  "Nazwisko",
-    dept_id    "ID Depatramentu",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    dept_id    'ID Depatramentu',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 ORDER BY
@@ -104,9 +105,9 @@ ORDER BY
 
 -- Zadanie 14
 SELECT
-    first_name "Imie",
-    last_name  "Nazwisko",
-    title      "Stanowisko"
+    first_name 'Imie',
+    last_name  'Nazwisko',
+    title      'Stanowisko'
 FROM
     emp
 WHERE
@@ -114,8 +115,8 @@ WHERE
 
 -- Zadanie 15
 SELECT
-    last_name  "Nazwisko",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -124,9 +125,9 @@ WHERE
 
 -- Zadanie 16
 SELECT
-    id        "ID",
-    name      "Nazwa",
-    region_id "ID Regionu"
+    id        'ID',
+    name      'Nazwa',
+    region_id 'ID Regionu'
 FROM
     dept
 WHERE
@@ -135,7 +136,7 @@ WHERE
 
 -- Zadanie 17
 SELECT
-    * "Nazwiska Na Litere `M`"
+    * 'Nazwiska Na Litere `M`'
 FROM
     emp
 WHERE
@@ -143,7 +144,7 @@ WHERE
 
 -- Zadanie 18
 SELECT
-    * "Nazwiska Bez `A`"
+    * 'Nazwiska Bez `A`'
 FROM
     emp
 WHERE
@@ -151,8 +152,8 @@ WHERE
 
 -- Zadanie 19
 SELECT
-    last_name  "Nazwisko",
-    start_date "Data Zatrudnienia"
+    last_name  'Nazwisko',
+    start_date 'Data Zatrudnienia'
 FROM
     emp
 WHERE
@@ -160,7 +161,7 @@ WHERE
 
 -- Zadanie 20
 SELECT
-    last_name "Nazwiska"
+    last_name 'Nazwiska'
 FROM
     emp
 WHERE
@@ -168,7 +169,7 @@ WHERE
 
 -- Zadanie 21
 SELECT
-    name "Nazwy Firm"
+    name 'Nazwy Firm'
 FROM
     customer
 WHERE

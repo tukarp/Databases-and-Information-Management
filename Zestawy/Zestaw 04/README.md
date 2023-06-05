@@ -12,10 +12,10 @@ Napisz skrypt który połączy ze sobą 2 tabele – pracowników i departament�
 
 ```
 SELECT
-    emp.first_name "Imie",
-    emp.last_name  "Nazwisko",
-    emp.dept_id    "NR",
-    dept.name      "Nazwa"
+    emp.first_name 'Imie',
+    emp.last_name  'Nazwisko',
+    emp.dept_id    'Nr',
+    dept.name      'Nazwa'
 FROM
     emp,
     dept;
@@ -29,9 +29,9 @@ Napisz skrypt który wyświetli numer departamentu, numer regionu oraz nazwę re
 
 ```
 SELECT
-    dept.id     "NR",
-    region.id   "NR Regionu",
-    region.name "Nazwa Regionu"
+    dept.id     'Nr',
+    region.id   'Nr Regionu',
+    region.name 'Nazwa Regionu'
 FROM
     dept,
     region
@@ -47,10 +47,10 @@ Napisz skrypt który wyświetli dane pracownika o nazwisku ```Menchu```, w tym n
 
 ```
 SELECT
-    emp.last_name  "Nazwisko",
-    emp.first_name "Imie",
-    dept.id        "Nr",
-    dept.name      "Nazwa"
+    emp.last_name  'Nazwisko',
+    emp.first_name 'Imie',
+    dept.id        'Nr',
+    dept.name      'Nazwa'
 FROM
     emp,
     dept
@@ -67,9 +67,9 @@ Napisz skrypt który wyświetli nazwisko, nazwę regionu oraz prowizję dla prac
 
 ```
 SELECT
-    emp.last_name      "Nazwisko",
-    region.name        "Nazwa",
-    emp.commission_pct "Prowizja"
+    emp.last_name      'Nazwisko',
+    region.name        'Nazwa',
+    emp.commission_pct 'Prowizja'
 FROM
     emp,
     dept
@@ -86,11 +86,11 @@ Napisz skrypt który wyświetli nazwę klienta składającego zamówienie, nazwi
 
 ```
 SELECT
-    customer.name                         "Nazwa klienta",
-    emp.last_name                         "Nazwisko",
-    TO_CHAR(ord.date_ordered, 'YY/MM/DD') "Data zamowienia",
-    item.quantity_shipped                 "Liczba",
-    product.name                          "Nazwa produktu"
+    customer.name                         'Nazwa klienta',
+    emp.last_name                         'Nazwisko',
+    TO_CHAR(ord.date_ordered, 'YY/MM/DD') 'Data zamowienia',
+    item.quantity_shipped                 'Liczba',
+    product.name                          'Nazwa produktu'
 FROM
     customer,
     product,
@@ -115,9 +115,9 @@ Napisz skrypt który wyświetli dane przedstawicieli handlowych, identyfikator p
 
 ```
 SELECT
-    NVL(emp.last_name, '-')   "Nazwisko",
-    NVL(TO_CHAR(emp.id), '-') "ID",
-    customer.name             "Nazwa Klienta"
+    NVL(emp.last_name, '-')   'Nazwisko',
+    NVL(TO_CHAR(emp.id), '-') 'ID',
+    customer.name             'Nazwa Klienta'
 FROM
     emp,
     customer
@@ -133,9 +133,9 @@ Napisz skrypt który wyświetli identyfikator klienta, jego nazwę oraz identyfi
 
 ```
 SELECT
-    customer.id               "Nr Klienta",
-    customer.name             "Nazwa Klienta",
-    NVL(TO_CHAR(ord.id), '-') "Nr Zamowienia"
+    customer.id               'Nr Klienta',
+    customer.name             'Nazwa Klienta',
+    NVL(TO_CHAR(ord.id), '-') 'Nr Zamowienia'
 FROM
     customer,
     ord
@@ -155,7 +155,7 @@ Napisz skrypt który wyświetl nazwiska pracowników oraz odpowiedniego dla dane
 
 ```
 SELECT
-    (e1.last_name || ' pracuje dla ' || e2.last_name) "Kto dla kogo"
+    (e1.last_name || ' pracuje dla ' || e2.last_name) 'Kto dla kogo'
 FROM
     emp e1,
     emp e2
@@ -176,11 +176,11 @@ np. President: 1, VP: 2, itd. (wykorzystać pseudokolumnę ```LEVEL```). Posorto
 
 ```
 SELECT
-    e1.first_name                    "Imie",
-    e1.last_name                     "Nazwisko",
-    e1.title                         "Stanowisko",
-    NVL(TO_CHAR(e1.manager_id), ' ') "Zwierzchnik",
-    level - 0                        "Poziom"
+    e1.first_name                    'Imie',
+    e1.last_name                     'Nazwisko',
+    e1.title                         'Stanowisko',
+    NVL(TO_CHAR(e1.manager_id), ' ') 'Zwierzchnik',
+    level - 0                        'Poziom'
 FROM
     emp e1
 CONNECT BY
@@ -199,11 +199,11 @@ Napisz skrypt który zmodyfikuję powyższe zapytanie tak, aby wyświetlić tylk
 
 ```
 SELECT
-    first_name                    "Imie",
-    last_name                     "Nazwisko",
-    title                         "Stanowisko",
-    NVL(TO_CHAR(manager_id), ' ') "Zwierzchnik",
-    level - 0                     "Poziom"
+    first_name                    'Imie',
+    last_name                     'Nazwisko',
+    title                         'Stanowisko',
+    NVL(TO_CHAR(manager_id), ' ') 'Zwierzchnik',
+    level - 0                     'Poziom'
 FROM
     emp 
 CONNECT BY

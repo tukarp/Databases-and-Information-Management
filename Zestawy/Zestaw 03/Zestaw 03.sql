@@ -1,25 +1,26 @@
+-- Bazy Danych i Zarządzanie Informacją
 -- Zestaw 03 - SQL – funkcje agregujące, grupowanie, operacje na zbiorach
 -- Funkcje agregujące
 -- Zadanie 1
 SELECT 
-    MAX(salary)       "Maksymalna",
-    MIN(salary)       "Minimalna",
-    AVG(salary)       "Srednia",
-    SUM(salary)       "Suma",
-    COUNT(first_name) "Liczba Pracownikow"
+    MAX(salary)       'Maksymalna',
+    MIN(salary)       'Minimalna',
+    AVG(salary)       'Srednia',
+    SUM(salary)       'Suma',
+    COUNT(first_name) 'Liczba Pracownikow'
 FROM 
     emp;
 
 -- Zadanie 2
 SELECT 
-    MIN(last_name) "Pierwsze Nazwisko", 
-    MAX(last_name) "Ostatnie Nazwisko" 
+    MIN(last_name) 'Pierwsze Nazwisko', 
+    MAX(last_name) 'Ostatnie Nazwisko' 
 FROM 
     emp;
 
 -- Zadanie 3
 SELECT 
-    COUNT(first_name) "Liczba Pracownikow" 
+    COUNT(first_name) 'Liczba Pracownikow' 
 FROM 
     emp 
 WHERE 
@@ -29,8 +30,8 @@ WHERE
 -- Funkcje grupujące
 -- Zadanie 4
 SELECT 
-    credit_rating        "Zdolnosc Kredytowa",
-    COUNT(credit_rating) "Liczba Klientow"
+    credit_rating        'Zdolnosc Kredytowa',
+    COUNT(credit_rating) 'Liczba Klientow'
 FROM
     customer
 GROUP BY
@@ -38,8 +39,8 @@ GROUP BY
 
 -- Zadanie 5
 SELECT 
-    title       "Stanowisko",
-    SUM(salary) "Zarobki"
+    title       'Stanowisko',
+    SUM(salary) 'Zarobki'
 FROM
     emp
 WHERE
@@ -51,8 +52,8 @@ ORDER BY
 
 -- Zadanie 6
 SELECT 
-    title       "Stanowisko",
-    MAX(salary) "Maksymalne Zarobki"
+    title       'Stanowisko',
+    MAX(salary) 'Maksymalne Zarobki'
 FROM 
     emp
 GROUP BY
@@ -60,8 +61,8 @@ GROUP BY
 
 -- Zadanie 7
 SELECT
-    dept_id     "Numer Oddzialu",
-    AVG(salary) "Srednie Zarobki"
+    dept_id     'Numer Oddzialu',
+    AVG(salary) 'Srednie Zarobki'
 FROM
     emp
 HAVING
@@ -71,7 +72,7 @@ GROUP BY
 
 -- Zadanie 8
 SELECT
-    last_name "Nazwisko"
+    last_name 'Nazwisko'
 FROM
     emp
 HAVING 
@@ -82,16 +83,16 @@ GROUP BY
 -- Operatory łączenia pionowego tabel
 -- Zadanie 9
 SELECT 
-    region_id "ID Regionu",
-    name      "Nazwa"
+    region_id 'ID Regionu',
+    name      'Nazwa'
 FROM
     dept
 
 UNION
 
 SELECT 
-    id   "ID Regionu",
-    name "Nazwa"
+    id   'ID Regionu',
+    name 'Nazwa'
 FROM
     region
 ORDER BY
@@ -99,14 +100,14 @@ ORDER BY
 
 -- Zadanie 10
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     dept
 
 UNION
 
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region
 GROUP BY
@@ -114,21 +115,21 @@ GROUP BY
 
 -- Zadanie 11
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     dept
 
 UNION ALL
 
 SELECT
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region;
 
 -- Zadanie 12
 SELECT
-    dept_id   "NR DEP / REG",
-    last_name "Naziwsko / Nazwa"
+    dept_id   'Nr Departamentu / Region',
+    last_name 'Naziwsko / Nazwa'
 FROM 
     emp
 
@@ -136,7 +137,7 @@ UNION
 
 SELECT
     id,
-    name "Nazwa"
+    name 'Nazwa'
 FROM
     region
 ORDER BY
@@ -144,26 +145,26 @@ ORDER BY
 
 -- Zadanie 13
 SELECT
-    id "ID Klienta"
+    id 'ID Klienta'
 FROM
     customer
 
 INTERSECT
 
 SELECT
-    customer_id "ID Klienta"
+    customer_id 'ID Klienta'
 FROM
     ord;
 
 -- Zadanie 14
 SELECT
-    id "ID Klienta"
+    id 'ID Klienta'
 FROM
     customer
 
 MINUS
 
 SELECT
-    customer_id "ID Klienta"
+    customer_id 'ID Klienta'
 FROM
     ord;

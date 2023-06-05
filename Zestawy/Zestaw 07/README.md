@@ -110,7 +110,7 @@ SAVEPOINT S1;
 
 -- Zadanie 6c
 SELECT
-    SUM(price) "Suma Cen Produktow"
+    SUM(price) 'Suma Cen Produktow'
 FROM
     item;
 
@@ -125,7 +125,7 @@ SAVEPOINT S2;
 
 -- Zadanie 6f
 SELECT
-    SUM(price) "Suma Cen Produktow"
+    SUM(price) 'Suma Cen Produktow'
 FROM
     item;
 
@@ -137,7 +137,7 @@ SET
 
 -- Zadanie 6h
 SELECT
-    SUM(price) "Suma Cen Produktow"
+    SUM(price) 'Suma Cen Produktow'
 FROM
     item;
 
@@ -146,7 +146,7 @@ ROLLBACK TO SAVEPOINT S2;
 
 -- Zadanie 6j
 SELECT
-    SUM(price) "Suma Cen Produktow"
+    SUM(price) 'Suma Cen Produktow'
 FROM
     item;
 
@@ -155,7 +155,7 @@ ROLLBACK TO SAVEPOINT S1;
 
 -- Zadanie 6l
 SELECT
-    SUM(price) "Suma Cen Produktow"
+    SUM(price) 'Suma Cen Produktow'
 FROM
     item;
 
@@ -198,9 +198,9 @@ Napisz skrypt który wstawi do tabeli ```dept``` kopie wszystkich istniejących 
 INSERT INTO
     dept
 SELECT
-    id + 100           "ID + 100", 
-    SUBSTR(name, 0, 4) "Podlancuch Znakow Nazw",
-    region_id          "Kopia Regionu"
+    id + 100           'ID + 100', 
+    SUBSTR(name, 0, 4) 'Podlancuch Znakow Nazw',
+    region_id          'Kopia Regionu'
 FROM
     dept;
 ```
@@ -215,8 +215,8 @@ Napisz skrypt który uzupełni w tabeli ```region_copy``` kolumnę name nazwami 
 INSERT INTO
     region_copy
 SELECT
-    customer_id "ID Klienta",
-    name        "Nazwa Klienta"
+    customer_id 'ID Klienta',
+    name        'Nazwa Klienta'
 FROM
     customer, ord
 WHERE
@@ -260,7 +260,7 @@ SET
 WHERE
     id
 IN (SELECT
-        product_id "ID Produktu"
+        product_id 'ID Produktu'
     FROM
         item
     GROUP BY
@@ -274,8 +274,8 @@ SET
 WHERE
     id
 IN (SELECT
-        product_id    "ID Produktu",
-        SUM(quantity) "Suma Ilosci Produktu"
+        product_id    'ID Produktu',
+        SUM(quantity) 'Suma Ilosci Produktu'
     FROM
         item
     GROUP BY
