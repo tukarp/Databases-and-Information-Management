@@ -57,7 +57,7 @@
 - ```Kolumna``` - to element zawierający dane jednego określonego typu,
 - ```Kwerenda``` - to zapytanie umożliwiające wyświetlanie pól i rekordów z tabel według ustalonego przez użytkownika kryterium,
 - ```Formularz``` -  to obiekt, który upraszcza proces wprowadzania i aktualizacji danych,
-- ``` Sortowanie``` - to porządkowanie rekordów w określonym porządku,
+- ```Sortowanie``` - to porządkowanie rekordów w określonym porządku,
 - ```Relacje``` - to zależności między tabelami umożliwiające ich logiczne powiązanie ze sobą,
 - ```Klucz główny``` - słowo kluczowe służące do wymuszenia wpisywania do kolumny z tym ograniczeniem wartości unikalnych i niepustych,
 - ```Klucz obcy``` - słowo kluczowe służące do wymuszenia wpisywania do kolumny z tym ograniczeniem wartości występujących w kolumnie referencyjnej.
