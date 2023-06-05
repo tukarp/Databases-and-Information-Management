@@ -228,19 +228,19 @@ set echo on
 
 ### Zadanie 2
 
-```a) ``` Napisz skrypt który doda do ```klienci``` kolumnę umożliwiającą przechowywanie adresu email.
+```a)``` Napisz skrypt który doda do ```klienci``` kolumnę umożliwiającą przechowywanie adresu email.
 
-```b) ``` Napisz skrypt który zmodyfikuję tabelę ```zamówienia``` w taki sposób, aby można było przechowywać informację o tym, czy dane zgłoszenie jest zrealizowane.
+```b)``` Napisz skrypt który zmodyfikuję tabelę ```zamówienia``` w taki sposób, aby można było przechowywać informację o tym, czy dane zgłoszenie jest zrealizowane.
 
-```c) ``` Napisz skrypt który doda kolumnę umożliwiającą przechowywanie informacji o dacie (i godzinie) zrealizowania zamówienia.
+```c)``` Napisz skrypt który doda kolumnę umożliwiającą przechowywanie informacji o dacie (i godzinie) zrealizowania zamówienia.
 
-```d) ``` Napisz skrypt który wyświetli jakie zmiany należy wprowadzić do tabeli ```zamówienia```, żeby można było przechowywać informacje o statusie realizacji zamówienia, np:
+```d)``` Napisz skrypt który wyświetli jakie zmiany należy wprowadzić do tabeli ```zamówienia```, żeby można było przechowywać informacje o statusie realizacji zamówienia, np:
 - ```Nowe zamówienie```, 
 - ```Realizowane```,
 - ```Przesyłka wysłana```,
 - ```Zakończone```.
 
-```e) ``` Napisz skrypt który nową tabelę ```statusy``` tak, żeby odpowiednia kolumna utworzona w poprzednim zadaniu miała ```ograniczenie klucza obcego```.
+```e)``` Napisz skrypt który nową tabelę ```statusy``` tak, żeby odpowiednia kolumna utworzona w poprzednim zadaniu miała ```ograniczenie klucza obcego```.
 
 ### Rozwiązanie
 
