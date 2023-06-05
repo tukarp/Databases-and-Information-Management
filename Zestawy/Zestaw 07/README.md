@@ -82,19 +82,19 @@ COMMIT;
 
 Napisz skrypt który wykona następujące czynności:
 
-- ```a) ``` Podniesię cenę wszystkich produktów o ```15%```,
-- ```b) ``` Stworzy pierwszy punkt kontrolny nazywając go ```S1```,
-- ```c) ``` Wyświetli sumę cen wszystkich produktów,
-- ```d) ``` Podniesię cenę o ```10%```,
-- ```e) ``` Stworzy drugi punkt kontrolny ```S2```,
-- ```f) ``` Wyświetlić sumę cen wszystkich produktów,
-- ```g) ``` Podniesię cenę o ```60%```,
-- ```h) ``` Wyświetli sumę cen wszystkich produktów,
-- ```i) ``` Wycofa zmiany do drugiego punktu kontrolnego (```S2```),
-- ```j) ``` Wyświetli sumę cen wszystkich produktów,
-- ```k) ``` Wycofa zmiany do pierwszego punktu kontrolnego (```S1```),
-- ```l) ``` Wyświetli sumę cen wszystkich produktów,
-- ```m) ``` Wykona polecenie ```COMMIT```.
+- ```a)``` Podniesię cenę wszystkich produktów o ```15%```,
+- ```b)``` Stworzy pierwszy punkt kontrolny nazywając go ```S1```,
+- ```c)``` Wyświetli sumę cen wszystkich produktów,
+- ```d)``` Podniesię cenę o ```10%```,
+- ```e)``` Stworzy drugi punkt kontrolny ```S2```,
+- ```f)``` Wyświetlić sumę cen wszystkich produktów,
+- ```g)``` Podniesię cenę o ```60%```,
+- ```h)``` Wyświetli sumę cen wszystkich produktów,
+- ```i)``` Wycofa zmiany do drugiego punktu kontrolnego (```S2```),
+- ```j)``` Wyświetli sumę cen wszystkich produktów,
+- ```k)``` Wycofa zmiany do pierwszego punktu kontrolnego (```S1```),
+- ```l)``` Wyświetli sumę cen wszystkich produktów,
+- ```m)``` Wykona polecenie ```COMMIT```.
 
 ### Rozwiązanie
 
